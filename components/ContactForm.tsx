@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
 
     try {
       // 1. Send Admin Notification
-      await emailjs.send(
+      const adminRes = await emailjs.send(
         serviceId,
         adminTemplateId,
         {
@@ -66,9 +66,10 @@ const ContactForm: React.FC = () => {
         },
         publicKey
       );
+      console.log('EmailJS Admin Result:', adminRes.status, adminRes.text);
 
       // 2. Send Customer Confirmation (Auto-reply)
-      await emailjs.send(
+      const customerRes = await emailjs.send(
         serviceId,
         customerTemplateId,
         {
@@ -78,14 +79,17 @@ const ContactForm: React.FC = () => {
         },
         publicKey
       );
+      console.log('EmailJS Customer Result:', customerRes.status, customerRes.text);
 
-      // 2. Save to CSV via PHP (Silent fail if local dev environment)
+      // 3. Save to CSV via PHP
       try {
-        await fetch('/api/contact.php', {
+        const phpRes = await fetch('/api/contact.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
+        const phpData = await phpRes.json();
+        console.log('PHP CSV Result:', phpData);
       } catch (phpErr) {
         console.warn('CSV logging is only functional on Hostinger/PHP server:', phpErr);
       }
