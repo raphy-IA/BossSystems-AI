@@ -18,35 +18,48 @@ const PackagesPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {PACKAGES.map((pkg, index) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch pt-8">
+          {PACKAGES.map((pkg) => (
             <div
               key={pkg.name}
-              className={`bg-white rounded-xl shadow-lg p-8 flex flex-col ${index === 1 ? 'border-4 border-[#D4AF37] transform lg:scale-105' : 'border border-gray-200'}`}
+              className={`bg-white rounded-2xl shadow-xl p-8 flex flex-col relative transition-all duration-300 hover:shadow-2xl ${pkg.isPopular ? 'border-4 border-[#D4AF37] transform lg:scale-110 z-10' : 'border border-gray-100'}`}
             >
-              {index === 1 && (
-                <div className="text-center mb-4">
-                  <span className="bg-[#D4AF37] text-[#0A1931] text-sm font-bold px-4 py-1 rounded-full uppercase">Le plus populaire</span>
+              {pkg.isPopular && (
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-[#D4AF37] text-[#0A1931] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md whitespace-nowrap">
+                    Recommandé
+                  </span>
                 </div>
               )}
-              <h2 className="text-3xl font-bold text-[#0A1931] text-center mb-2">{pkg.name}</h2>
-              <p className="text-gray-500 text-center mb-8 h-12">
-                {pkg.name === 'Starter Digital Pack' ? "Idéal pour démarrer" : pkg.name === 'Scale Up Pack' ? "Pour scaler efficacement" : "Pour innover et dominer"}
-              </p>
 
-              <div className="border-t border-gray-200 my-6"></div>
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-[#0A1931] mb-2">{pkg.name}</h2>
+                <p className="text-gray-500 text-sm leading-relaxed h-10">
+                  {pkg.tagline}
+                </p>
+              </div>
 
-              <ul className="space-y-4 text-gray-700 flex-grow mb-8">
+              <div className="mb-8 p-6 bg-gray-50 rounded-xl border border-gray-100">
+                <div className="text-center">
+                  <span className="text-sm font-semibold text-gray-500 block mb-1">Investissement</span>
+                  <p className="text-2xl font-extrabold text-[#0A1931]">{pkg.price}</p>
+                </div>
+              </div>
+
+              <ul className="space-y-4 text-gray-700 flex-grow mb-10">
                 {pkg.features.map(feature => (
-                  <li key={feature} className="flex items-start">
-                    <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  <li key={feature} className="flex items-start text-sm">
+                    <svg className="w-5 h-5 text-[#D4AF37] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
+
               <Link
                 to="/contact"
-                className={`w-full text-center block font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 mt-auto ${index === 1 ? 'bg-[#D4AF37] text-[#0A1931] hover:bg-opacity-90' : 'bg-slate-800 text-white hover:bg-slate-700'}`}
+                className={`w-full text-center block font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg ${pkg.isPopular ? 'bg-[#D4AF37] text-[#0A1931] hover:bg-[#b8952d]' : 'bg-[#0A1931] text-white hover:bg-slate-800'}`}
               >
                 {pkg.ctaText}
               </Link>

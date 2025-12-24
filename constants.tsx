@@ -100,18 +100,45 @@ export const SERVICES: Service[] = [
 export const PACKAGES: Package[] = [
   {
     name: 'Starter Digital Pack',
-    features: ['Audit Flash IT/IA', 'Création site vitrine', 'Automatisation d’un process clé', 'Sécurisation de base'],
-    ctaText: 'Choisir Starter',
+    price: 'À partir de 1 500 €',
+    tagline: 'L\'essentiel pour poser vos bases digitales.',
+    features: [
+      'Audit Flash IT & maturité IA',
+      'Site vitrine Premium (SEO optimisé)',
+      'Automatisation d’un processus métier clé',
+      'Configuration email pro & Cybersécurité base',
+      'Accompagnement prise en main (2h)'
+    ],
+    ctaText: 'Démarrer maintenant',
   },
   {
     name: 'Scale Up Pack',
-    features: ['Roadmap transformation', 'Migration cloud', 'Tableaux de bord IA', 'Chatbot support', 'Audit sécurité avancé'],
-    ctaText: 'Choisir Scale Up',
+    price: 'À partir de 3 500 €',
+    tagline: 'Boostez votre productivité et passez à l\'échelle.',
+    features: [
+      'Tout le pack Starter',
+      'Roadmap de transformation complète',
+      'Tableaux de bord IA (Data Intelligence)',
+      'Chatbot Intelligent (Support ou Sales)',
+      'Audit sécurité & Conformité RGPD',
+      'Support prioritaire (Ticket J+1)'
+    ],
+    ctaText: 'Propulser mon business',
+    isPopular: true,
   },
   {
     name: 'Elite Innovation Pack',
-    features: ['Cadrage IA métier', 'Déploiement d’applications RPA', 'Supervision sécurité proactive', 'Accompagnement continu 24/7'],
-    ctaText: 'Choisir Elite',
+    price: 'Sur Devis',
+    tagline: 'L\'excellence technologique sur mesure.',
+    features: [
+      'Tout le pack Scale Up',
+      'Cadrage IA & RPA métier complexe',
+      'Développement d\'une App/CRM propriétaire',
+      'Supervision sécurité proactive (SOC)',
+      'DSI partagée & Conseil stratégique continu',
+      'Garantie de performance & SLA sur mesure'
+    ],
+    ctaText: 'Contacter un expert',
   },
 ];
 

@@ -18,8 +18,11 @@ export interface Service {
 
 export interface Package {
   name: string;
+  price: string;
+  tagline: string;
   features: string[];
   ctaText: string;
+  isPopular?: boolean;
 }
 
 export interface CaseStudy {
