@@ -18,7 +18,11 @@ export interface Service {
 
 export interface Package {
   name: string;
-  price: string;
+  prices?: {
+    EUR: number;
+    USD: number;
+    XAF: number;
+  };
   tagline: string;
   features: string[];
   ctaText: string;

@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { NAV_LINKS, SERVICES } from '../constants';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -19,14 +21,14 @@ const Footer: React.FC = () => {
         <div className="bg-gradient-to-r from-[#D4AF37] to-[#B89A30] rounded-3xl p-8 md:p-12 mb-20 shadow-2xl transform -translate-y-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#0A1931] mb-2">Prêt à propulser votre entreprise vers l'avenir ?</h2>
-              <p className="text-[#0A1931]/80 text-lg">Discutons de vos enjeux technologiques dès aujourd'hui.</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0A1931] mb-2">{t('common.footer.cta.title')}</h2>
+              <p className="text-[#0A1931]/80 text-lg">{t('common.footer.cta.subtitle')}</p>
             </div>
             <Link
               to="/contact"
               className="bg-[#0A1931] text-white px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-xl whitespace-nowrap"
             >
-              Réservez un expert &rarr;
+              {t('common.footer.cta.button')} &rarr;
             </Link>
           </div>
         </div>
@@ -38,7 +40,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Logo variant="footer" className="h-12" />
             <p className="text-gray-400 leading-relaxed">
-              L'excellence technologique au service des ambitions de demain. Expertise en IA, Cybersécurité et Solutions Métiers pour PME innovantes.
+              {t('common.footer.tagline')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37] hover:text-[#0A1931] transition-all" aria-label="LinkedIn">
@@ -54,7 +56,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
               <span className="w-2 h-2 bg-[#D4AF37] rounded-full" />
-              Expertises Clés
+              {t('common.footer.sections.expertise')}
             </h3>
             <ul className="space-y-4">
               {SERVICES.slice(0, 4).map((service) => (
@@ -72,14 +74,14 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
               <span className="w-2 h-2 bg-[#D4AF37] rounded-full" />
-              Explorer
+              {t('common.footer.sections.explore')}
             </h3>
             <ul className="space-y-4">
               {NAV_LINKS.filter(link => !link.subLinks).map((link) => (
                 <li key={link.name}>
                   <Link to={link.path} className="text-gray-400 hover:text-[#D4AF37] transition-all hover:pl-2 flex items-center gap-2">
                     <span className="text-xs">→</span>
-                    {link.name}
+                    {t(`common.nav.${link.name.toLowerCase().replace(' ', '')}`, link.name)}
                   </Link>
                 </li>
               ))}
@@ -88,20 +90,20 @@ const Footer: React.FC = () => {
 
           {/* Column 4: Direct Contact */}
           <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-            <h3 className="text-lg font-bold mb-6 text-[#D4AF37]">Coordonnées</h3>
+            <h3 className="text-lg font-bold mb-6 text-[#D4AF37]">{t('common.footer.sections.contact')}</h3>
             <div className="space-y-5">
               <div className="flex items-start gap-4">
                 <svg className="w-6 h-6 text-[#D4AF37] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1">Email</p>
+                  <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1">{t('common.footer.labels.email')}</p>
                   <a href="mailto:contact@bosssystems-ai.com" className="text-gray-200 hover:text-[#D4AF37] transition-colors font-medium">contact@bosssystems-ai.com</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <svg className="w-6 h-6 text-[#D4AF37] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1">Localisation</p>
-                  <p className="text-gray-200 font-medium">Service Global & Remote Expertise</p>
+                  <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1">{t('common.footer.labels.location')}</p>
+                  <p className="text-gray-200 font-medium">{t('common.footer.labels.locationValue')}</p>
                 </div>
               </div>
             </div>
@@ -113,12 +115,12 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-gray-500 text-sm">
-              © {currentYear} <span className="text-gray-300 font-semibold tracking-wide">BOSS SYSTEMS AI</span>. L'excellence au service de l'IA.
+              © {currentYear} <span className="text-gray-300 font-semibold tracking-wide">BOSS SYSTEMS AI</span>. {t('common.footer.legal.rights')}
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-xs text-gray-500 uppercase font-bold tracking-widest">
-              <a href="#" className="hover:text-[#D4AF37] transition-colors">Mentions Légales</a>
-              <a href="#" className="hover:text-[#D4AF37] transition-colors">Confidentialité</a>
-              <a href="#" className="hover:text-[#D4AF37] transition-colors">CGV</a>
+              <a href="#" className="hover:text-[#D4AF37] transition-colors">{t('common.footer.legal.mentions')}</a>
+              <a href="#" className="hover:text-[#D4AF37] transition-colors">{t('common.footer.legal.privacy')}</a>
+              <a href="#" className="hover:text-[#D4AF37] transition-colors">{t('common.footer.legal.terms')}</a>
             </div>
           </div>
         </div>

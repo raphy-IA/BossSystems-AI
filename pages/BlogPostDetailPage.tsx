@@ -1,11 +1,12 @@
-
 import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { BLOG_POSTS } from '../constants';
+import { useTranslation } from 'react-i18next';
 
 const BlogPostDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
+    const { t } = useTranslation();
     const post = BLOG_POSTS.find(p => p.slug === slug);
 
     // Scroll to top on mount
@@ -17,18 +18,23 @@ const BlogPostDetailPage: React.FC = () => {
         return <Navigate to="/blog" replace />;
     }
 
+    // Retrieve translated content or fallback
+    const translatedContent = t(`blog.posts.${post.id}.content`, post.content);
+    const translatedTitle = t(`blog.posts.${post.id}.title`, post.title);
+    const translatedExcerpt = t(`blog.posts.${post.id}.excerpt`, post.excerpt);
+
     return (
         <div className="bg-white min-h-screen pb-20">
             <Helmet>
-                <title>{post.title} | Blog | BOSS SYSTEMS AI</title>
-                <meta name="description" content={post.excerpt} />
+                <title>{translatedTitle} | Blog | BOSS SYSTEMS AI</title>
+                <meta name="description" content={translatedExcerpt} />
             </Helmet>
 
             {/* Hero Header */}
             <section className="bg-[#0A1931] text-white pt-24 pb-20">
                 <div className="container mx-auto px-6">
                     <Link to="/blog" className="text-[#D4AF37] hover:underline mb-8 inline-block font-semibold">
-                        &larr; Retour aux ressources
+                        &larr; {t('blog.page.back', 'Retour aux ressources')}
                     </Link>
                     <div className="max-w-5xl">
                         <div className="flex items-center space-x-4 mb-6">
@@ -38,10 +44,10 @@ const BlogPostDetailPage: React.FC = () => {
                             <span className="text-gray-400 text-sm">{post.date}</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                            {post.title}
+                            {translatedTitle}
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
-                            {post.excerpt}
+                            {translatedExcerpt}
                         </p>
                     </div>
                 </div>
@@ -52,12 +58,12 @@ const BlogPostDetailPage: React.FC = () => {
                 <div className="max-w-5xl mx-auto">
                     {/* Main Image */}
                     <div className="rounded-2xl overflow-hidden shadow-2xl mb-12 border-8 border-white">
-                        <img src={post.imageUrl} alt={post.title} className="w-full h-auto object-cover max-h-[500px]" />
+                        <img src={post.imageUrl} alt={translatedTitle} className="w-full h-auto object-cover max-h-[500px]" />
                     </div>
 
                     {/* Text Content */}
                     <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 prose prose-lg prose-slate max-w-none">
-                        {post.content.split('\n\n').filter(p => p.trim() !== '').map((block, idx) => {
+                        {translatedContent.split('\n\n').filter(p => p.trim() !== '').map((block, idx) => {
                             const lines = block.split('\n').map(l => l.trim()).filter(l => l !== '');
                             if (lines.length === 0) return null;
 
@@ -98,11 +104,11 @@ const BlogPostDetailPage: React.FC = () => {
                     {/* Social Share / CTA */}
                     <div className="mt-16 p-8 bg-[#F8FAFC] rounded-2xl border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
-                            <h4 className="text-xl font-bold text-[#0A1931]">Cet article vous a été utile ?</h4>
-                            <p className="text-gray-600">Partagez vos ambitions avec nous pour une analyse personnalisée.</p>
+                            <h4 className="text-xl font-bold text-[#0A1931]">{t('blog.page.cta.title', 'Cet article vous a été utile ?')}</h4>
+                            <p className="text-gray-600">{t('blog.page.cta.text', 'Partagez vos ambitions avec nous pour une analyse personnalisée.')}</p>
                         </div>
                         <Link to="/contact" className="bg-[#D4AF37] text-[#0A1931] font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all transform hover:scale-105 whitespace-nowrap">
-                            Parler à un expert
+                            {t('blog.page.cta.button', 'Parler à un expert')}
                         </Link>
                     </div>
                 </div>
@@ -110,7 +116,7 @@ const BlogPostDetailPage: React.FC = () => {
 
             {/* More Articles Section */}
             <section className="container mx-auto px-6 py-20 border-t border-gray-100 mt-20">
-                <h2 className="text-3xl font-bold text-[#0A1931] mb-12 text-center">Autres lectures suggérées</h2>
+                <h2 className="text-3xl font-bold text-[#0A1931] mb-12 text-center">{t('blog.page.related', 'Autres lectures suggérées')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {BLOG_POSTS.filter(p => p.id !== post.id).slice(0, 3).map(otherPost => (
                         <Link to={`/blog/${otherPost.slug}`} key={otherPost.id} className="group flex flex-col bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -119,7 +125,9 @@ const BlogPostDetailPage: React.FC = () => {
                             </div>
                             <div className="p-6">
                                 <p className="text-xs text-[#D4AF37] font-bold uppercase mb-2">{otherPost.category}</p>
-                                <h3 className="text-lg font-bold text-[#0A1931] group-hover:text-[#D4AF37] transition-colors line-clamp-2">{otherPost.title}</h3>
+                                <h3 className="text-lg font-bold text-[#0A1931] group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                                    {t(`blog.posts.${otherPost.id}.title`, otherPost.title)}
+                                </h3>
                             </div>
                         </Link>
                     ))}

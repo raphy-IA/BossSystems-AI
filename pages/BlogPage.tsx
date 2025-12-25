@@ -1,20 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { BLOG_POSTS } from '../constants';
 
 const BlogPage: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50">
       <Helmet>
-        <title>Blog & Ressources | BOSS SYSTEMS AI</title>
-        <meta name="description" content="Actualités, conseils et articles de fond sur l'Intelligence Artificielle, l'automatisation et la transformation digitale." />
+        <title>{t('common.nav.blog')} | BOSS SYSTEMS AI</title>
+        <meta name="description" content={t('blog.page.subtitle')} />
       </Helmet>
       <div className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#0A1931]">Ressources & Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#0A1931]">{t('blog.page.title')}</h1>
           <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-            Nos analyses, conseils et retours d'expérience sur l'IT, l'IA et la transformation digitale.
+            {t('blog.page.subtitle')}
           </p>
         </div>
 
@@ -31,10 +33,10 @@ const BlogPage: React.FC = () => {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <p className="text-sm text-gray-400 mb-3">{post.date}</p>
-                <h2 className="text-2xl font-bold text-[#0A1931] mb-4 group-hover:text-[#D4AF37] transition-colors leading-tight">{post.title}</h2>
-                <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">{post.excerpt}</p>
+                <h2 className="text-2xl font-bold text-[#0A1931] mb-4 group-hover:text-[#D4AF37] transition-colors leading-tight">{t(`blog.posts.${post.id}.title`, post.title)}</h2>
+                <p className="text-gray-600 mb-6 line-clamp-3 leading-relaxed">{t(`blog.posts.${post.id}.excerpt`, post.excerpt)}</p>
                 <Link to={`/blog/${post.slug}`} className="text-[#D4AF37] font-bold hover:gap-3 transition-all mt-auto flex items-center gap-2">
-                  Lire la suite <span>&rarr;</span>
+                  {t('blog.page.readMore')} <span>&rarr;</span>
                 </Link>
               </div>
             </div>

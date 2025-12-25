@@ -100,7 +100,11 @@ export const SERVICES: Service[] = [
 export const PACKAGES: Package[] = [
   {
     name: 'Starter Digital Pack',
-    price: 'À partir de 1 500 €',
+    prices: {
+      EUR: 1500,
+      USD: 1650,
+      XAF: 450000
+    },
     tagline: 'L\'essentiel pour poser vos bases digitales.',
     features: [
       'Audit Flash IT & maturité IA',
@@ -113,7 +117,11 @@ export const PACKAGES: Package[] = [
   },
   {
     name: 'Scale Up Pack',
-    price: 'À partir de 3 500 €',
+    prices: {
+      EUR: 3500,
+      USD: 3850,
+      XAF: 2100000
+    },
     tagline: 'Boostez votre productivité et passez à l\'échelle.',
     features: [
       'Tout le pack Starter',
@@ -128,7 +136,7 @@ export const PACKAGES: Package[] = [
   },
   {
     name: 'Elite Innovation Pack',
-    price: 'Sur Devis',
+    prices: undefined, // Sur Devis
     tagline: 'L\'excellence technologique sur mesure.',
     features: [
       'Tout le pack Scale Up',

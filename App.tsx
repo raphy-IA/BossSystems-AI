@@ -23,30 +23,34 @@ const ChatWidget: React.FC = () => (
 );
 
 
+import { CurrencyProvider } from './context/CurrencyContext';
+
 export default function App() {
   return (
     <HelmetProvider>
-      <Router>
-        <ScrollToTop />
-        <div className="bg-white text-[#212529]">
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/services" element={<ServicesHubPage />} />
-              <Route path="/services/:slug" element={<ServiceDetailPage />} />
-              <Route path="/packages" element={<PackagesPage />} />
-              <Route path="/portfolio" element={<PortfolioPage />} />
-              <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPostDetailPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-          </main>
-          <Footer />
-          <ChatWidget />
-        </div>
-      </Router>
+      <CurrencyProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="bg-white text-[#212529]">
+            <Header />
+            <main>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/services" element={<ServicesHubPage />} />
+                <Route path="/services/:slug" element={<ServiceDetailPage />} />
+                <Route path="/packages" element={<PackagesPage />} />
+                <Route path="/portfolio" element={<PortfolioPage />} />
+                <Route path="/portfolio/:slug" element={<ProjectDetailPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/blog/:slug" element={<BlogPostDetailPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+              </Routes>
+            </main>
+            <Footer />
+            <ChatWidget />
+          </div>
+        </Router>
+      </CurrencyProvider>
     </HelmetProvider>
   );
 }

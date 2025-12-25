@@ -1,21 +1,24 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { CASE_STUDIES } from '../constants';
 
 const PortfolioPage: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Nos Réalisations & Études de Cas | BOSS SYSTEMS AI</title>
-        <meta name="description" content="Découvrez comment nous avons transformé des entreprises grâce à nos solutions d'IA et de développement sur mesure." />
+        <title>{t('common.nav.portfolio')} | BOSS SYSTEMS AI</title>
+        <meta name="description" content={t('portfolio.page.subtitle')} />
       </Helmet>
       <div className="container mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#0A1931]">Nos Réalisations & Études de Cas</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#0A1931]">{t('portfolio.page.title')}</h1>
           <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-            Découvrez comment nous avons aidé des entreprises comme la vôtre à atteindre leurs objectifs.
+            {t('portfolio.page.subtitle')}
           </p>
         </div>
 
@@ -29,15 +32,15 @@ const PortfolioPage: React.FC = () => {
               <div className="p-8">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-8 h-[2px] bg-[#D4AF37]" />
-                  <p className="text-sm text-[#D4AF37] font-bold uppercase tracking-wider">{study.client}</p>
+                  <p className="text-sm text-[#D4AF37] font-bold uppercase tracking-wider">{t(`portfolio.cases.${study.id}.client`, study.client)}</p>
                 </div>
-                <h2 className="text-2xl font-bold text-[#0A1931] mb-4 leading-tight">{study.title}</h2>
-                <p className="text-gray-600 mb-6 line-clamp-3">{study.description}</p>
+                <h2 className="text-2xl font-bold text-[#0A1931] mb-4 leading-tight">{t(`portfolio.cases.${study.id}.title`, study.title)}</h2>
+                <p className="text-gray-600 mb-6 line-clamp-3">{t(`portfolio.cases.${study.id}.desc`, study.description)}</p>
                 <Link
                   to={`/portfolio/${study.slug}`}
                   className="text-[#0A1931] font-bold flex items-center gap-2 group/btn hover:text-[#D4AF37] transition-colors"
                 >
-                  En savoir plus
+                  {t('portfolio.page.cta')}
                   <span className="transform group-hover/btn:translate-x-1 transition-transform">→</span>
                 </Link>
               </div>
