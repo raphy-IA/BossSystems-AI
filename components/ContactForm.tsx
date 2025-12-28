@@ -120,8 +120,17 @@ const ContactForm: React.FC = () => {
 
     // Simulation mode logic remains...
     if (!serviceId || !adminTemplateId || !customerTemplateId || !publicKey) {
-      // ... (keep logic)
       console.warn("EmailJS keys are missing. Simulating successful dual submission for testing.");
+
+      // Attempt CSV logging even in simulation mode (for local PHP testing)
+      try {
+        await fetch('/api/contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...formData, message: `[SIMULATION] ${formData.message}` }),
+        });
+      } catch (err) { console.warn('CSV Log failed in simulation:', err); }
+
       await new Promise(resolve => setTimeout(resolve, 1500));
       setIsSubmitted(true);
       setIsLoading(false);
@@ -335,14 +344,25 @@ const ContactForm: React.FC = () => {
           disabled={formData.source === 'ORDER'} // Lock if Order
           className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-[#D4AF37] focus:outline-none bg-white ${formData.source === 'ORDER' ? 'bg-gray-100 text-gray-500 cursor-not-allowed border-gray-200' : 'border-gray-300'}`}
         >
-          {CONTACT_FORM_NEEDS.map(need => {
-            const keyMap: Record<string, string> = {
-              'Audit & Cyber': 'audit', 'Conseil Strat': 'conseil', 'Data & IA': 'data',
-              'Développement': 'dev', 'Fintech & CRM': 'fintech', 'Formation': 'formation',
-              'Pack Starter': 'starter', 'Pack Scale Up': 'scaleup', 'Pack Elite': 'elite', 'Autre': 'other'
-            };
-            return <option key={need} value={need}>{t(`contact.needs.${keyMap[need] || 'other'}`, need)}</option>;
-          })}
+          {CONTACT_FORM_NEEDS
+            .filter(need => {
+              // If ORDER mode, only show the specific package (or all packages? User said "pack ne se choisissent que lors de leur choix dans page package")
+              // Actually, if ORDER, it is disabled anyway (line 335).
+              // User wants: "par défaut... on ne dois pas etre capable de choisir... les pack".
+              // So if NOT ORDER, exclude packs.
+              if (formData.source !== 'ORDER') {
+                return !need.includes('Pack');
+              }
+              return true; // If ORDER, show all (it's disabled anyway so it shows the selected one)
+            })
+            .map(need => {
+              const keyMap: Record<string, string> = {
+                'Audit & Cyber': 'audit', 'Conseil Strat': 'conseil', 'Data & IA': 'data',
+                'Développement': 'dev', 'Fintech & CRM': 'fintech', 'Formation': 'formation',
+                'Pack Starter': 'starter', 'Pack Scale Up': 'scaleup', 'Pack Elite': 'elite', 'Autre': 'other'
+              };
+              return <option key={need} value={need}>{t(`contact.needs.${keyMap[need] || 'other'}`, need)}</option>;
+            })}
         </select>
       </div>
 
