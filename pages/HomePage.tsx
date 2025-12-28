@@ -226,7 +226,7 @@ const PackagesSection: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <Link to="/contact" className="mt-auto bg-[#D4AF37] text-[#0A1931] font-bold py-4 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
+              <Link to="/packages" className="mt-auto bg-[#D4AF37] text-[#0A1931] font-bold py-4 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
                 {t('home.packages.cta')}
               </Link>
             </div>

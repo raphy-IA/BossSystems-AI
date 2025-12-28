@@ -89,7 +89,7 @@ const Header: React.FC = () => {
           </button>
 
           <Link to="/contact" className="bg-[#D4AF37] text-[#0A1931] font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
-            {t('common.nav.contact', 'Contact')}
+            {t('common.nav.cta', 'Book an expert')}
           </Link>
         </div>
 
@@ -132,7 +132,7 @@ const Header: React.FC = () => {
               </button>
             </div>
             <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-center mt-4 bg-[#D4AF37] text-[#0A1931] font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300">
-              Réservez un expert
+              {t('common.nav.cta', 'Book an expert')}
             </Link>
           </nav>
         </div>
