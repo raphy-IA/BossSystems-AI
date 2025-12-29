@@ -1,46 +1,340 @@
 {
+    "brand": {
+        "name": "BOSS SYSTEMS AI",
+        "slogan": "L’Architecte de votre Souveraineté Augmentée"
+    },
     "common": {
         "from": "À partir de",
         "nav": {
             "home": "Accueil",
-            "services": "Nos Services",
+            "about": "Doctrine",
+            "services": "Unités de Frappe",
             "packages": "Offres Packagées",
             "portfolio": "Réalisations",
             "blog": "Ressources",
-            "contact": "Contact",
-            "cta": "Réservez un expert"
+            "contact": "Induction",
+            "cta": "Activer Votre Audit Flash"
         },
         "footer": {
-            "tagline": "L'excellence technologique au service des ambitions de demain. Expertise en IA, Cybersécurité et Solutions Métiers pour PME innovantes.",
+            "tagline": "Le commandement ne se délègue pas, il s'augmente. Boss Systems AI : Architecture de Souveraineté Numérique.",
             "cta": {
                 "title": "Prêt à propulser votre entreprise vers l'avenir ?",
                 "subtitle": "Discutons de vos enjeux technologiques dès aujourd'hui.",
                 "button": "Réservez un expert"
             },
+            "links": {
+                "services": "Unités",
+                "company": "Quartier Général",
+                "legal": "Légal"
+            },
             "sections": {
-                "expertise": "Expertises Clés",
-                "explore": "Explorer",
-                "contact": "Coordonnées"
+                "expertise": "Expertise Stratégique",
+                "explore": "Navigation",
+                "contact": "Ligne Directe"
             },
             "labels": {
-                "email": "Email",
-                "location": "Localisation",
-                "locationValue": "Service Global & Remote Expertise"
+                "email": "Canal Sécurisé",
+                "location": "Quartier Général",
+                "locationValue": "Rayonnement Stratégique Mondial"
             },
             "legal": {
+                "rights": "Tous droits réservés.",
                 "mentions": "Mentions Légales",
                 "privacy": "Confidentialité",
-                "terms": "CGV",
-                "rights": "L'excellence au service de l'IA."
+                "terms": "CGU"
+            }
+        }
+    },
+    "methodology": {
+        "title": "Le Protocole IMPACT",
+        "step1": "Audit Flash (Diagnostic des Failles)",
+        "step2": "Roadmap ROI (Trajectoire de Gain)",
+        "step3": "Déploiement Agile (Injection d'Actifs)",
+        "step4": "Pilotage Souverain (Optimisation de Puissance)"
+    },
+    "about": {
+        "hero": {
+            "title": "Doctrine de Souveraineté",
+            "subtitle": "Manifeste pour une domination technologique décomplexée."
+        },
+        "story": {
+            "title": "Axiome de Puissance",
+            "content": "Dans une économie de guerre économique, la neutralité est une faiblesse.\nBSA n'est pas une ESN, c'est une milice numérique dédiée à votre suprématie.\n\nNous refusons la fatalité de la dépendance technologique. Nous bâtissons des citadelles."
+        },
+        "poles": {
+            "title": "Architecture Duale",
+            "gold": {
+                "title": "Pôle OR",
+                "desc": "La vision, la stratégie, les flux financiers. C'est le cerveau qui ordonne la conquête."
+            },
+            "navy": {
+                "title": "Pôle NAVY",
+                "desc": "Le code, l'infrastructure, la sécurité. C'est le muscle qui exécute et protège."
+            }
+        },
+        "values": {
+            "title": "Le Code Agnostique"
+        },
+        "cta": {
+            "title": "Rejoignez l'Élite",
+            "button": "Activer mon Audit"
+        }
+    },
+    "contact": {
+        "page": {
+            "title": "Processus d'Induction",
+            "subtitle": "Que ce soit pour un audit gratuit, une question sur nos services ou un projet spécifique, nous sommes à votre écoute.",
+            "orderTitle": "Confirmation de votre Commande",
+            "orderSubtitle": "Vous avez sélectionné une offre stratégique. Complétez le formulaire ci-dessous pour valider votre demande.",
+            "option1": "Réservez un rendez-vous avec un de nos experts",
+            "option2": "Transmission Écrite de votre besoin"
+        },
+        "unit_label": "Unité de Frappe concernée",
+        "message_placeholder": "Quels actifs souhaitez-vous sanctuariser ?",
+        "submit": "Soumettre pour Diagnostic",
+        "success": "Demande d'induction reçue. Votre diagnostic de souveraineté est en préparation.",
+        "form": {
+            "name": "Identité (Nom Complet)",
+            "email": "Canal de communication (Email)",
+            "company": "Entité (Entreprise)",
+            "phone": "Ligne directe",
+            "need": "Cible d'intervention :",
+            "message": "Situation actuelle & Objectifs",
+            "submit": "Lancer l'Induction",
+            "successTitle": "Transmission Réussie",
+            "success": "Votre dossier a été transmis au commandement central.",
+            "error": "Échec de transmission. Réessayez.",
+            "errorConsent": "Validation du protocole requise.",
+            "privacy": "Je valide le protocole de confidentialité et autorise l'analyse de mes données.",
+            "sending": "Transmission en cours...",
+            "security": "Vérification Humaine",
+            "mathLabel": "Résolvez : {{a}} + {{b}}",
+            "mathError": "Calcul erroné.",
+            "spamError": "Anomalie détectée."
+        },
+        "needs": {
+            "brain": "BSA Brain (IA)",
+            "guard": "BSA Guard (Cyber)",
+            "fintech": "BSA Fintech (Finance)",
+            "dev": "BSA Dev (Engineering)",
+            "flow": "BSA Flow (Automation)",
+            "academy": "BSA Academy (Formation)",
+            "starter": "Pack Initiation",
+            "scaleup": "Pack Expansion",
+            "elite": "Pack Souveraineté",
+            "other": "Autre Requête Stratégique"
+        }
+    },
+    "blog": {
+        "page": {
+            "title": "Ressources Stratégiques",
+            "subtitle": "Intelligence, Analyses et Doctrines pour dirigeants.",
+            "readMore": "Accéder à la Ressource"
+        },
+        "posts": {
+            "1": {
+                "title": "Comment l'IA transforme les PME en 2025",
+                "excerpt": "Leviers de compétitivité et applications concrètes de l'IA pour les entreprises."
+            },
+            "2": {
+                "title": "Les 5 Menaces Cyber à ne pas ignorer",
+                "excerpt": "Panorama des risques majeurs et stratégies de défense pour 2026."
+            },
+            "3": {
+                "title": "ROI de la Transformation Digitale",
+                "excerpt": "Mythe ou réalité ? Comment mesurer l'impact financier réel de vos investissements."
+            },
+            "4": {
+                "title": "Automatisation RPA & Rentabilité",
+                "excerpt": "Le levier invisible pour éliminer les tâches chronophages."
+            },
+            "5": {
+                "title": "ERP Métier vs Standard",
+                "excerpt": "Pourquoi le sur-mesure est souvent plus rentable que les solutions génériques."
+            },
+            "6": {
+                "title": "Fintech 2026 : Trésorerie Autonome",
+                "excerpt": "Vers une gestion financière prédictive et automatisée."
+            }
+        }
+    },
+    "services": {
+        "page": {
+            "title": "Unités de Frappe Stratégique",
+            "subtitle": "Explorez nos domaines d'expertise pour propulser votre performance et sécuriser votre avenir."
+        },
+        "title": "Unités de Frappe Stratégique",
+        "subtitle": "Explorez nos 6 vecteurs de puissance. Chaque unité est spécialisée pour transformer vos défis technologiques en opportunités de croissance.",
+        "cta": "Explorer l'Unité",
+        "brain": {
+            "title": "BSA Brain",
+            "mission": "IA & Intelligence Décisionnelle",
+            "desc": "Transformez vos données brutes en or stratégique. Nous construisons votre \"Second Cerveau\" d'entreprise pour automatiser la prise de décision et prédire vos futurs marchés."
+        },
+        "guard": {
+            "title": "BSA Guard",
+            "mission": "Cyber-Résilience & Immunité",
+            "desc": "Dormez sur vos deux oreilles. Nous déployons un dôme de protection impénétrable autour de vos actifs critiques, garantissant une continuité d'activité absolue face aux cybermenaces."
+        },
+        "fintech": {
+            "title": "BSA Fintech",
+            "mission": "Ingénierie Financière & Flux",
+            "desc": "Libérez votre trésorerie des frictions mondiales. Nos architectures de paiement multi-devises optimisent vos flux financiers pour une rentabilité sans frontières."
+        },
+        "dev": {
+            "title": "BSA Dev",
+            "mission": "Ingénierie Haute Performance",
+            "desc": "Le code est votre arme de guerre. Nous développons des plateformes robustes et scalables, conçues sur mesure pour supporter votre hyper-croissance sans faiblir."
+        },
+        "flow": {
+            "title": "BSA Flow",
+            "mission": "Automatisation & Productivité",
+            "desc": "Éliminez le travail inutile. Nous orchestrons une automatisation radicale de vos tâches répétitives pour libérer le génie créatif de vos équipes humaines."
+        },
+        "academy": {
+            "title": "BSA Academy",
+            "mission": "Gouvernance & Transmission",
+            "desc": "Masterclass d'élite et transfert de maîtrise pour une autonomie stratégique absolue de vos équipes dirigeantes."
+        }
+    },
+    "packages": {
+        "page": {
+            "title": "Arsenal de Commandement",
+            "subtitle": "Des solutions tactiques clés en main pour un déploiement rapide de votre puissance numérique."
+        },
+        "starter": {
+            "name": "Pack Initiation",
+            "tagline": "Visibilité & Protection Socle",
+            "cta": "Activer le Pack",
+            "price": "Dès 1 500 €",
+            "features": {
+                "f1": "Audit Flash (Sécurité & Web)",
+                "f2": "Site Vitrine 'Authority' (5 pages)",
+                "f3": "Configuration Email Pro & DNS Sécurisé",
+                "f4": "Conformité RGPD Essentielle"
+            }
+        },
+        "scaleup": {
+            "name": "Pack Expansion",
+            "tagline": "Automatisation & Conquête",
+            "badge": "Vecteur de Croissance",
+            "cta": "Lancer l'Offensive",
+            "price": "Dès 3 500 €",
+            "features": {
+                "f1": "Tout le Pack Initiation",
+                "f2": "Agent IA de Support (Chatbot entraîner)",
+                "f3": "Automatisation CRM & Facturation",
+                "f4": "Dashboard de Pilotage Data",
+                "f5": "Stratégie SEO Offensive"
+            }
+        },
+        "elite": {
+            "name": "Pack Souveraineté",
+            "tagline": "Domination Intégrale",
+            "cta": "Solliciter le Haut Commandement",
+            "price": "Sur Mesure",
+            "features": {
+                "f1": "Tout le Pack Expansion",
+                "f2": "Développement App Métier Propriétaire",
+                "f3": "Architecture Zero-Trust & SOC",
+                "f4": "IA Générative Privée (RAG)",
+                "f5": "DSI Externalisée & Gouvernance"
+            }
+        }
+    },
+    "portfolio": {
+        "page": {
+            "title": "Opérations Réalisées",
+            "subtitle": "Exemples concrets de déploiement de puissance et de gains stratégiques pour nos partenaires.",
+            "cta": "Lire le Rapport"
+        },
+        "cases": {
+            "1": {
+                "client": "IndustrieTech",
+                "title": "Optimisation des Ventes Industrielles",
+                "desc": "Déploiement d'un CRM IA augmentant les leads qualifiés de 30%."
+            },
+            "2": {
+                "client": "ShopSecure",
+                "title": "Sécurisation E-commerce Critique",
+                "desc": "Audit et protection multicouche réduisant les incidents de 95%."
+            },
+            "3": {
+                "client": "ServiceFirst",
+                "title": "Automatisation Support Client",
+                "desc": "Chatbot IA traitant 70% des requêtes en autonomie totale."
+            },
+            "4": {
+                "client": "AgriData AI",
+                "title": "IA Prédictive Agricole",
+                "desc": "Analyse satellitaire pour optimiser les rendements et l'irrigation."
+            },
+            "5": {
+                "client": "LegalFlow",
+                "title": "Automatisation RPA Juridique",
+                "desc": "Traitement documentaire automatisé : de 15h à 2h de gestion hebdo."
+            },
+            "6": {
+                "client": "CyberGuard 360",
+                "title": "SOC & Détection Temps Réel",
+                "desc": "Centre de supervision IA détectant les anomalies en quelques minutes."
+            },
+            "7": {
+                "client": "Consulto Group",
+                "title": "CRM Métier Sur-Mesure",
+                "desc": "Gestion de mandats et facturation automatisée pour cabinet de conseil."
+            },
+            "8": {
+                "client": "BankFlow Solutions",
+                "title": "Trésorerie Prédictive Fintech",
+                "desc": "IA de prévision de cash-flow et rapprochement bancaire automatisé."
+            },
+            "9": {
+                "client": "OmniMarket",
+                "title": "Gestion de Stock Intelligente",
+                "desc": "ERP Retail avec réapprovisionnement automatique et alertes prédictives."
             }
         }
     },
     "home": {
         "hero": {
-            "title": "L'Intelligence Artificielle au Service de votre Performance",
-            "subtitle": "Accélérez votre transformation digitale avec nos solutions d'IA sur mesure, audit IT et cybersécurité.",
-            "ctaStart": "Démarrer votre transformation",
-            "ctaPortfolio": "Voir nos services"
+            "title": "Reprenez le Commandement de votre Infrastructure",
+            "subtitle": "Nous transformons la complexité technologique en forteresses opérationnelles. IA, Cybersécurité et Fintech pour une domination intercontinentale sans failles.",
+            "ctaStart": "Démarrer mon Diagnostic",
+            "ctaPortfolio": "Voir les Actifs"
+        },
+        "intro": {
+            "title": "L'Architecte de votre Souveraineté",
+            "description": "Nous ne sommes pas une simple ESN. Nous sommes vos partenaires de combat pour bâtir une domination technologique durable. Notre approche combine expertise technique militaire et vision business pragmatique.",
+            "audit": {
+                "title": "Audit & ROI Immédiat",
+                "desc": "Identifiez vos failles de sécurité et vos leviers de croissance cachés pour un impact financier mesurable dès les premières semaines."
+            },
+            "custom": {
+                "title": "Architecture Sur-Mesure",
+                "desc": "Pas de solutions génériques. Nous concevons des systèmes d'élite taillés pour vos défis sectoriels spécifiques (Finance, Industrie, Services)."
+            },
+            "partner": {
+                "title": "Alliance Stratégique",
+                "desc": "Plus qu'un prestataire, un partenaire de confiance engagé sur le long terme pour la montée en puissance et l'autonomie de vos équipes."
+            }
+        },
+        "services": {
+            "title": "Unités de Frappe",
+            "subtitle": "Explorez nos 6 vecteurs de puissance pour une domination numérique totale.",
+            "cta": "Voir toutes les unités"
+        },
+        "packages": {
+            "title": "Commandement Packagé",
+            "subtitle": "Solutions clés en main pour déploiement rapide.",
+            "cta": "S'abonner au succès"
+        },
+        "stats": {
+            "title": "Impact Mesuré"
+        },
+        "cta": {
+            "title": "Prenez le Contrôle",
+            "description": "Votre transformation commence par une décision."
         },
         "hero2": {
             "title": "L'IA au Service de votre Croissance",
@@ -53,440 +347,6 @@
             "subtitle": "Audit Cyber de haut niveau et CRM métiers propriétaires adaptés à vos besoins.",
             "ctaStart": "Contacter un Expert",
             "ctaPortfolio": "Offres Packagées"
-        },
-        "intro": {
-            "title": "Pourquoi choisir Boss Systems AI ?",
-            "description": "Chez BOSS SYSTEMS AI, nous accompagnons les entreprises ambitieuses dans leur transformation digitale. Notre approche combine expertise technique, vision stratégique et une obsession pour les résultats concrets.",
-            "audit": {
-                "title": "Audit & ROI immédiat",
-                "desc": "Nous identifions rapidement les leviers de croissance et de sécurité pour un impact mesurable dès les premières semaines."
-            },
-            "custom": {
-                "title": "Personnalisation métier",
-                "desc": "Pas de solution générique. Nos outils sont taillés sur mesure pour vos défis sectoriels (Audit, Agro, PME, Fintech)."
-            },
-            "partner": {
-                "title": "Partenaire Global",
-                "desc": "Relation de confiance long-terme, accompagnement au changement et support continu pour vos équipes."
-            }
-        },
-        "services": {
-            "title": "Nos Expertises",
-            "subtitle": "Explorer nos domaines de spécialisation pour propulser votre performance numérique.",
-            "cta": "Voir tout le hub"
-        },
-        "packages": {
-            "title": "Nos Offres Packagées",
-            "subtitle": "Des solutions prêtes à l'emploi pour accélérer votre croissance digitale en toute simplicité.",
-            "cta": "S'abonner au succès"
-        },
-        "stats": {
-            "title": "Un impact réel sur votre business"
-        },
-        "cta": {
-            "title": "Prenez le tournant de l'IA",
-            "description": "Décrivez-nous vos défis. Nos experts analysent votre situation et vous proposent une feuille de route gratuite."
-        }
-    },
-    "packages": {
-        "page": {
-            "title": "Des solutions adaptées à votre croissance",
-            "subtitle": "Comparez nos offres et choisissez le pack qui correspond le mieux à votre ambition et à votre maturité digitale."
-        },
-        "starter": {
-            "name": "Starter Digital Pack",
-            "tagline": "L'essentiel pour poser vos bases digitales.",
-            "price": "À partir de 1 500 €",
-            "features": {
-                "audit": "Audit Flash IT & maturité IA",
-                "site": "Site vitrine Premium (SEO optimisé)",
-                "automation": "Automatisation d’un processus métier clé",
-                "email": "Configuration email pro & Cybersécurité base",
-                "support": "Accompagnement prise en main (2h)"
-            },
-            "cta": "Démarrer maintenant"
-        },
-        "scaleup": {
-            "name": "Scale Up Pack",
-            "tagline": "Boostez votre productivité et passez à l'échelle.",
-            "price": "À partir de 3 500 €",
-            "features": {
-                "all_starter": "Tout le pack Starter",
-                "roadmap": "Roadmap de transformation complète",
-                "dashboard": "Tableaux de bord IA (Data Intelligence)",
-                "chatbot": "Chatbot Intelligent (Support ou Sales)",
-                "audit_sec": "Audit sécurité & Conformité RGPD",
-                "support_prio": "Support prioritaire (Ticket J+1)"
-            },
-            "cta": "Propulser mon business",
-            "badge": "Recommandé",
-            "investment": "Investissement"
-        },
-        "elite": {
-            "name": "Elite Innovation Pack",
-            "tagline": "L'excellence technologique sur mesure.",
-            "price": "Sur Devis",
-            "features": {
-                "all_scaleup": "Tout le pack Scale Up",
-                "ai_complex": "Cadrage IA & RPA métier complexe",
-                "app_dev": "Développement d'une App/CRM propriétaire",
-                "soc": "Supervision sécurité proactive (SOC)",
-                "dsi": "DSI partagée & Conseil stratégique continu",
-                "sla": "Garantie de performance & SLA sur mesure"
-            },
-            "cta": "Contacter un expert"
-        }
-    },
-    "contact": {
-        "page": {
-            "title": "Contactez un expert",
-            "subtitle": "Que ce soit pour un audit gratuit, une question sur nos services ou un projet spécifique, nous sommes à votre écoute.",
-            "orderTitle": "Finaliser votre Commande",
-            "orderSubtitle": "Vous êtes sur le point de transformer votre business. Vérifiez vos informations ci-dessous pour recevoir votre bon de commande.",
-            "option1": "Option 1: Prise de RDV Instantanée",
-            "option2": "Option 2: Formulaire de Contact Détaillé"
-        },
-        "form": {
-            "name": "Nom complet",
-            "email": "Email professionnel",
-            "company": "Entreprise",
-            "phone": "Téléphone",
-            "need": "Mon besoin concerne :",
-            "message": "Votre message (optionnel)",
-            "submit": "Démarrer la discussion",
-            "success": "Message envoyé avec succès !",
-            "successTitle": "Merci !",
-            "error": "Erreur lors de l'envoi.",
-            "errorConsent": "Veuillez accepter la politique de confidentialité.",
-            "privacy": "J'accepte la politique de confidentialité et que mes données soient utilisées pour me recontacter.",
-            "sending": "Envoi en cours...",
-            "security": "Sécurité Anti-Robot",
-            "mathLabel": "Combien font {{a}} + {{b}} ?",
-            "mathError": "Réponse incorrecte au calcul.",
-            "spamError": "Une activité suspecte a été détectée."
-        },
-        "needs": {
-            "audit": "Audit & Cybersécurité",
-            "conseil": "Conseil Stratégique",
-            "data": "Data & IA",
-            "dev": "Développement Web/App",
-            "fintech": "Solutions Fintech/CRM",
-            "formation": "Formation & Accompagnement",
-            "starter": "Pack Starter",
-            "scaleup": "Pack Scale Up",
-            "elite": "Pack Elite",
-            "other": "Autre demande"
-        }
-    },
-    "portfolio": {
-        "page": {
-            "title": "Nos Réalisations & Études de Cas",
-            "subtitle": "Découvrez comment nous avons aidé des entreprises comme la vôtre à atteindre leurs objectifs.",
-            "cta": "En savoir plus"
-        },
-        "cases": {
-            "1": {
-                "title": "Optimisation des Ventes pour PME Industrielle",
-                "desc": "Déploiement d'un CRM et d'outils de scoring IA, résultant en une augmentation de 30% des leads qualifiés.",
-                "client": "IndustrieTech",
-                "overview": "IndustrieTech faisait face à un cycle de vente long et des difficultés à prioriser ses prospects.",
-                "challenges": [
-                    "Silos de données entre marketing et ventes",
-                    "Processus manuel de qualification des leads",
-                    "Manque de visibilité sur le tunnel de conversion"
-                ],
-                "solutions": [
-                    "Intégration d'un CRM Salesforce avec scoring IA",
-                    "Automatisation des séquences d'emailing personnalisées",
-                    "Tableaux de bord de performance en temps réel"
-                ],
-                "results": [
-                    "+30% de leads qualifiés en 6 mois",
-                    "-20% sur la durée du cycle de vente",
-                    "Productivité accrue de l'équipe commerciale"
-                ]
-            },
-            "2": {
-                "title": "Sécurisation d'Infrastructure E-commerce",
-                "desc": "Audit complet et mise en place d'une politique de sécurité multicouche, réduisant les incidents de 95%.",
-                "client": "ShopSecure",
-                "overview": "ShopSecure a subi plusieurs attaques par déni de service (DDoS) mettant en péril son activité saisonnière.",
-                "challenges": [
-                    "Vulnérabilités critiques sur la plateforme de paiement",
-                    "Absence de plan de reprise d'activité (PRA)",
-                    "Infrastructure cloud mal configurée"
-                ],
-                "solutions": [
-                    "Implémentation d'un WAF (Web Application Firewall)",
-                    "Migration vers une architecture cloud sécurisée (AWS)",
-                    "Configuration de sauvegardes immuables"
-                ],
-                "results": [
-                    "Zéro interruption de service pendant le Black Friday",
-                    "-95% de tentatives d'intrusion réussies",
-                    "Conformité RGPD et PCI-DSS validée"
-                ]
-            },
-            "3": {
-                "title": "Automatisation du Support Client",
-                "desc": "Intégration d'un chatbot intelligent traitant 70% des requêtes de niveau 1 en toute autonomie.",
-                "client": "ServiceFirst",
-                "overview": "ServiceFirst était submergé par des demandes simples et répétitives, bloquant ses agents sur des tâches à faible valeur ajoutée.",
-                "challenges": [
-                    "Temps d'attente client trop élevé",
-                    "Surcharge des équipes de support",
-                    "Incohérence des réponses entre les canaux"
-                ],
-                "solutions": [
-                    "Déploiement d'un agent conversationnel IA (LLM)",
-                    "Base de connaissance centralisée et auto-apprenante",
-                    "Escalade intelligente vers les humains pour les cas complexes"
-                ],
-                "results": [
-                    "70% des requêtes résolues sans intervention humaine",
-                    "Satisfaction client (CSAT) en hausse de 25%",
-                    "Réduction des coûts opérationnels de 40%"
-                ]
-            },
-            "4": {
-                "title": "IA Prédictive pour l'Agriculture",
-                "desc": "Analyse de données satellitaires et capteurs IoT pour prédire les rendements et optimiser l'irrigation.",
-                "client": "AgriData AI",
-                "overview": "AgriData AI souhaitait fournir aux agriculteurs des outils décisionnels précis pour faire face au changement climatique.",
-                "challenges": [
-                    "Volume massif de données hétérogènes (météo, sols, images)",
-                    "Difficulté à fournir des prévisions à l'échelle locale",
-                    "Besoin d'une interface simple pour des non-experts"
-                ],
-                "solutions": [
-                    "Modèles de Machine Learning entraînés sur données multispectrales",
-                    "Intégration de capteurs IoT LoRaWAN sur site",
-                    "Application mobile avec conseils agronomiques personnalisés"
-                ],
-                "results": [
-                    "Optimisation de l'irrigation (économie d'eau de 20%)",
-                    "Précision des prévisions de rendement de 92%",
-                    "Adoption massive par plus de 500 exploitations"
-                ]
-            },
-            "5": {
-                "title": "Automatisation Documentaire (RPA)",
-                "desc": "Traitement automatisé de dossiers juridiques complexes, réduisant le temps de gestion de 15h à 2h par semaine.",
-                "client": "LegalFlow",
-                "overview": "LegalFlow perdait des milliers d'heures facturables sur de la saisie de données et de la classification de documents.",
-                "challenges": [
-                    "Traitement de gros volumes de documents non structurés",
-                    "Risque élevé d'erreurs humaines de saisie",
-                    "Délais de traitement impactant la relation client"
-                ],
-                "solutions": [
-                    "OCR avancé couplé à une analyse sémantique IA",
-                    "Workflows RPA pour synchroniser les dossiers avec le logiciel métier",
-                    "Signature électronique automatique intégrée"
-                ],
-                "results": [
-                    "Gain de 13h par semaine et par collaborateur",
-                    "Éradication complète des erreurs de saisie",
-                    "Accélération du traitement des dossiers de 300%"
-                ]
-            },
-            "6": {
-                "title": "SOC & Détection de Menaces en Temps Réel",
-                "desc": "Mise en place d'un centre de supervision sécurité (SOC) avec détection proactive des anomalies par IA.",
-                "client": "CyberGuard 360",
-                "overview": "CyberGuard 360 avait besoin d'une visibilité totale sur l'infrastructure de ses clients pour réagir instantanément aux menaces.",
-                "challenges": [
-                    "Logs fragmentés et difficiles à analyser",
-                    "Multiplication des attaques complexes (APT)",
-                    "Fatigue des alertes pour les analystes"
-                ],
-                "solutions": [
-                    "Déploiement d'une solution SIEM/SOAR moderne",
-                    "Algorithmes de détection d'anomalies comportementales",
-                    "Système d'automatisation de la réponse aux incidents"
-                ],
-                "results": [
-                    "Temps de détection (MTTD) réduit de plusieurs jours à quelques minutes",
-                    "Automatisation de 80% des tâches de réponse",
-                    "Sécurisation de plus de 5000 terminaux critiques"
-                ]
-            },
-            "7": {
-                "title": "CRM Métier pour Cabinet de Conseil",
-                "desc": "Conception d'une application propriétaire de gestion de mandats, ressources et facturation automatisée.",
-                "client": "Consulto Group",
-                "overview": "Consulto Group utilisait plusieurs outils disparates pour gérer ses missions, entraînant des erreurs de facturation et une perte de visibilité sur la rentabilité.",
-                "challenges": [
-                    "Difficulté de suivi des heures par collaborateur",
-                    "Processus de facturation manuel et chronophage",
-                    "Absence de vision consolidée des performances par mandat"
-                ],
-                "solutions": [
-                    "Développement d'un CRM propriétaire sur mesure",
-                    "Moteur de calcul automatisé des honoraires et frais",
-                    "Tableaux de bord de rentabilité temps réel"
-                ],
-                "results": [
-                    "Réduction de 80% du temps passé sur la facturation",
-                    "Visibilité totale sur la marge par projet",
-                    "Amélioration du taux d'occupation des consultants de 15%"
-                ]
-            },
-            "8": {
-                "title": "Plateforme de Trésorerie Prédictive",
-                "desc": "Développement d'une solution Fintech utilisant l'IA pour prédire les flux de trésorerie et automatiser les rapprochements.",
-                "client": "BankFlow Solutions",
-                "overview": "BankFlow Solutions souhaitait offrir à ses clients PME une visibilité proactive sur leurs besoins de financement.",
-                "challenges": [
-                    "Complexité du rapprochement bancaire multi-comptes",
-                    "Instabilité des prévisions de cash-flow",
-                    "Besoin d'une sécurité bancaire de niveau institutionnel"
-                ],
-                "solutions": [
-                    "Algorithmes de Machine Learning pour l'analyse des tendances",
-                    "Intégration API bancaire (Open Banking)",
-                    "Modules de simulation de scénarios financiers"
-                ],
-                "results": [
-                    "Précision des prévisions à 30 jours supérieure à 95%",
-                    "Automatisation de 90% des rapprochements bancaires",
-                    "Détection précoce des risques d'impayés"
-                ]
-            },
-            "9": {
-                "title": "Automatisation de Gestion Retail/ERP",
-                "desc": "Mise en place d'un système de gestion de stocks et de réapprovisionnement automatique pour PME agroalimentaire.",
-                "client": "OmniMarket",
-                "overview": "OmniMarket souffrait de ruptures de stock fréquentes et d'un surstockage coûteux sur certaines références périssables.",
-                "challenges": [
-                    "Gestion de stocks multi-entrepôts archaïque",
-                    "Manque de prédiction de la demande saisonnière",
-                    "Pertes importantes dues aux dates d'expiration"
-                ],
-                "solutions": [
-                    "Déploiement d'un mini-ERP avec module intelligent de réapprovisionnement",
-                    "Système d'alertes prédictives sur les dates de péremption",
-                    "Intégration avec les systèmes fournisseurs"
-                ],
-                "results": [
-                    "Réduction des ruptures de stock de 45%",
-                    "-30% de pertes sur les produits périssables",
-                    "Optimisation du fonds de roulement de 20%"
-                ]
-            }
-        }
-    },
-    "blog": {
-        "page": {
-            "title": "Ressources & Blog",
-            "subtitle": "Nos analyses, conseils et retours d'expérience sur l'IT, l'IA et la transformation digitale.",
-            "readMore": "Lire la suite",
-            "back": "Retour aux ressources",
-            "cta": {
-                "title": "Cet article vous a été utile ?",
-                "text": "Partagez vos ambitions avec nous pour une analyse personnalisée.",
-                "button": "Parler à un expert"
-            },
-            "related": "Autres lectures suggérées"
-        },
-        "posts": {
-            "1": {
-                "title": "Comment l'IA peut transformer votre PME en 2025",
-                "excerpt": "Découvrez les applications concrètes de l'intelligence artificielle qui sont à la portée des petites et moyennes entreprises aujourd'hui.",
-                "content": "## L'IA : Plus qu'un Buzzword pour les PME en 2025\n\nEn 2025, l'Intelligence Artificielle n'est plus réservée aux géants de la Tech. Pour les PME, elle représente un levier de compétitivité sans précédent. Mais par où commencer ?\n\n### 1. L'Automatisation des Tâches Administratives\nL'IA peut aujourd'hui gérer la saisie de factures, le classement de documents et même la réponse aux emails redondants. Gain de temps estimé : **jusqu'à 15 heures par semaine** pour vos équipes administratives.\n\n### 2. La Personnalisation de la Relation Client\nGrâce aux LLM (Large Language Models), vous pouvez offrir un support client 24/7 qui comprend réellement les besoins de vos interlocuteurs, avec la même finesse qu'un agent humain.\n\n### 3. L'Analyse Prédictive Simple\nPrédire vos besoins en stock ou vos pics d'activité n'a jamais été aussi accessible. Les outils d'IA modernes analysent vos données historiques pour vous éviter les ruptures ou le surstockage.\n\n**Conclusion :** L'enjeu de 2025 n'est pas de savoir si vous utiliserez l'IA, mais à quel point elle sera intégrée au cœur de vos processus métiers."
-            },
-            "2": {
-                "title": "Les 5 menaces de cybersécurité à ne pas ignorer",
-                "excerpt": "La sécurité n'est pas une option. Tour d'horizon des risques majeurs et des stratégies pour vous en prémunir efficacement.",
-                "content": "## Cybersécurité : Le Panorama des Risques en 2026\n\nAvec la sophistication croissante des attaques, la question n'est plus \"si\" vous serez attaqué, mais \"quand\". Voici les 5 menaces critiques à surveiller.\n\n### 1. Le Phishing par Deepfake\nLes attaquants utilisent désormais l'IA pour cloner la voix ou l'image de vos dirigeants. Soyez vigilants sur les demandes de virement urgentes, même si elles semblent venir du PDG.\n\n### 2. Les Attaques sur la Supply Chain\nVotre PME est peut-être une porte d'entrée vers un plus gros client. Les hackers ciblent les maillons faibles. Sécurisez vos accès fournisseurs.\n\n**Conseil :** Adoptez le principe du \"Zero Trust\". Ne faites confiance à aucune entité par défaut, même à l'intérieur de votre réseau."
-            },
-            "3": {
-                "title": "Le ROI de la transformation digitale : mythe ou réalité ?",
-                "excerpt": "Aller au-delà du buzzword. Comment mesurer concrètement l'impact financier de vos investissements technologiques.",
-                "content": "## Mesurer le Retour sur Investissement Digital\n\nInvestir dans la tech coûte cher. Savoir combien cela rapporte est crucial.\n\n### 1. Réduction des Coûts Opérationnels\nL'automatisation réduit les erreurs humaines et le temps passé sur des tâches à faible valeur. Calculez le taux horaire économisé x nombre d'heures.\n\n### 2. Augmentation des Revenus\nDe nouveaux canaux de vente digitaux ou une meilleure conversion grâce à l'UX peuvent directement booster votre CA.\n\n**Le piège à éviter :** Ne regardez pas que le ROI financier immédiat. Prenez en compte la satisfaction employé et la rétention client."
-            }
-        }
-    },
-    "services": {
-        "page": {
-            "title": "Nos Services",
-            "subtitle": "Des expertises pointues pour chaque étape de votre croissance.",
-            "detail": {
-                "keyFeatures": "Nos prestations clés :",
-                "targetAudienceTitle": "Pour qui ?",
-                "targetAudienceText": "Ce service s'adresse aux dirigeants de TPE/PME et aux responsables métiers (Finance, RH, Vente) qui cherchent à digitaliser et optimiser leurs opérations, ainsi qu'aux DSI de PME/Grandes Entreprises en quête d'une expertise externe pour leurs projets d'audit, d'IA ou de gouvernance.",
-                "ctaTitle": "Un projet de {{service}} ?",
-                "ctaDesc": "Discutons de vos besoins spécifiques. Obtenez un devis personnalisé.",
-                "ctaButton": "Obtenir un devis"
-            }
-        },
-        "items": {
-            "audit-digital-cybersecurite": {
-                "title": "Audit Digital & Cybersécurité",
-                "tagline": "Diagnostiquer pour mieux protéger et performer.",
-                "description": "Une analyse complète de votre environnement numérique pour identifier les vulnérabilités, optimiser les performances et garantir une protection robuste contre les menaces actuelles.",
-                "prestations": [
-                    "Audit flash de maturité IT/IA",
-                    "Cartographie personnalisée des risques et opportunités",
-                    "Scan de vulnérabilités et tests d'intrusion",
-                    "Recommandations stratégiques de sécurisation"
-                ]
-            },
-            "conseil-strategique-transformation": {
-                "title": "Conseil Stratégique & Transformation",
-                "tagline": "Piloter le changement vers l'excellence digitale.",
-                "description": "Nous vous aidons à définir et à mettre en œuvre une feuille de route de transformation digitale alignée sur vos objectifs business, intégrant l'automatisation des processus de gestion.",
-                "prestations": [
-                    "Élaboration de roadmap de transformation numérique",
-                    "Automatisation des processus de gestion métiers",
-                    "Gouvernance des données et de l'IA",
-                    "Optimisation opérationnelle par le digital"
-                ]
-            },
-            "data-intelligence-ia-appliquee": {
-                "title": "Data Intelligence & IA Appliquée",
-                "tagline": "Transformer vos données en avantage compétitif.",
-                "description": "Exploitez la puissance de vos données avec des solutions d'Intelligence Artificielle sur mesure pour automatiser, prédire et décider plus intelligemment.",
-                "prestations": [
-                    "Tableaux de bord analytiques « narrés » par IA",
-                    "Déploiement de chatbots avancés (support, FAQ, RH…)",
-                    "Automatisation du traitement documentaire",
-                    "Solutions de scoring prospect et de prédiction"
-                ]
-            },
-            "developpement-integration-digitale": {
-                "title": "Développement & Intégration Digitale",
-                "tagline": "Construire les outils de votre performance.",
-                "description": "Création d'applications web, mobiles et intégration de systèmes pour fluidifier vos opérations et offrir des expériences utilisateur exceptionnelles.",
-                "prestations": [
-                    "Développement d'applications web et mobiles sur mesure",
-                    "Intégration d'API et de services tiers",
-                    "Automatisation des workflows (RPA)",
-                    "Modernisation de systèmes hérités (Legacy)"
-                ]
-            },
-            "solutions-metier-fintech": {
-                "title": "Solutions Métier & Fintech",
-                "tagline": "Des outils propriétaires pour vos besoins spécifiques.",
-                "description": "Conception de solutions de gestion métiers (CRM/ERP) propriétaires et de produits financiers innovants adaptés à votre secteur d'activité.",
-                "prestations": [
-                    "Applications CRM/ERP propriétaires (Audit, Agro, PME)",
-                    "Développement de plateformes Fintech",
-                    "Produits financiers numériques sur mesure",
-                    "Systèmes de gestion de mandats et de facturation complexe"
-                ]
-            },
-            "accompagnement-formation": {
-                "title": "Accompagnement & Formation",
-                "tagline": "Assurer l'adoption et la montée en compétences.",
-                "description": "Nous formons vos équipes aux nouveaux outils et nouvelles méthodes pour garantir une adoption réussie de la transformation et maximiser le retour sur investissement.",
-                "prestations": [
-                    "Formations sur mesure aux outils digitaux et IA",
-                    "Accompagnement au changement pour les équipes",
-                    "Coaching de managers sur le leadership digital",
-                    "Création de documentation et de supports pédagogiques"
-                ]
-            }
         }
     }
 }

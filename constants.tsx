@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { NavLink, Service, Package, CaseStudy, BlogPost } from './types';
 
@@ -15,138 +14,162 @@ const IconBrain: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 const IconCode: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg>
 );
-const IconSchool: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+const IconDiploma: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}><path d="M12 3L1 9l4 2.18v6.32L1 14.41v2.18l11 6 11-6v-2.18L19 17.5v-6.32L23 9 12 3zm0 8.5L5.45 8 12 4.5 18.55 8 12 11.5zM17 15.32v-4.63l-4 2.18v4.63l4-2.18z"></path></svg>
 );
 const IconBank: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}><path d="M11.5 1L2 6v2h19V6l-9.5-5zM6 10v7h3v-7H6zm5 0v7h3v-7h-3zm5 0v7h3v-7h-3zM2 19v2h20v-2H2z"></path></svg>
 );
+const IconFlow: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}><path d="M12 2L2 12h8v8l10-10h-8V2z"></path></svg>
+);
 
 
 // Navigation Links
 export const NAV_LINKS: NavLink[] = [
-  { name: 'Accueil', path: '/' },
+  { name: 'common.nav.home', path: '/' },
+  { name: 'common.nav.about', path: '/about' },
   {
-    name: 'Nos Services',
+    name: 'common.nav.services',
     path: '/services',
     subLinks: [
-      { name: 'Audit Digital & Cybersécurité', path: '/services/audit-digital-cybersecurite' },
-      { name: 'Conseil Stratégique & Transformation', path: '/services/conseil-strategique-transformation' },
-      { name: 'Data Intelligence & IA Appliquée', path: '/services/data-intelligence-ia-appliquee' },
-      { name: 'Développement & Intégration Digitale', path: '/services/developpement-integration-digitale' },
-      { name: 'Solutions Métier & Fintech', path: '/services/solutions-metier-fintech' },
-      { name: 'Accompagnement & Formation', path: '/services/accompagnement-formation' },
+      { name: 'services.brain.title', path: '/services/brain' },
+      { name: 'services.guard.title', path: '/services/guard' },
+      { name: 'services.fintech.title', path: '/services/fintech' },
+      { name: 'services.dev.title', path: '/services/dev' },
+      { name: 'services.flow.title', path: '/services/flow' },
+      { name: 'services.academy.title', path: '/services/academy' },
     ],
   },
-  { name: 'Offres Packagées', path: '/packages' },
-  { name: 'Réalisations', path: '/portfolio' },
-  { name: 'Ressources', path: '/blog' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'common.nav.packages', path: '/packages' },
+  { name: 'common.nav.portfolio', path: '/portfolio' },
+  { name: 'common.nav.blog', path: '/blog' },
+  { name: 'common.nav.contact', path: '/contact' },
 ];
 
 // Services Data
 export const SERVICES: Service[] = [
   {
-    slug: 'audit-digital-cybersecurite',
-    title: 'Audit Digital & Cybersécurité',
-    tagline: 'Diagnostiquer pour mieux protéger et performer.',
-    icon: IconShield,
-    description: "Une analyse complète de votre environnement numérique pour identifier les vulnérabilités, optimiser les performances et garantir une protection robuste contre les menaces actuelles.",
-    prestations: ["Audit flash de maturité IT/IA", "Cartographie personnalisée des risques et opportunités", "Scan de vulnérabilités et tests d'intrusion", "Recommandations stratégiques de sécurisation"],
-  },
-  {
-    slug: 'conseil-strategique-transformation',
-    title: 'Conseil Stratégique & Transformation',
-    tagline: "Piloter le changement vers l'excellence digitale.",
-    icon: IconCompass,
-    description: "Nous vous aidons à définir et à mettre en œuvre une feuille de route de transformation digitale alignée sur vos objectifs business, intégrant l'automatisation des processus de gestion.",
-    prestations: ["Élaboration de roadmap de transformation numérique", "Automatisation des processus de gestion métiers", "Gouvernance des données et de l'IA", "Optimisation opérationnelle par le digital"],
-  },
-  {
-    slug: 'data-intelligence-ia-appliquee',
-    title: 'Data Intelligence & IA Appliquée',
-    tagline: "Transformer vos données en avantage compétitif.",
+    slug: 'brain',
+    title: 'services.brain.title',
+    tagline: 'services.brain.mission',
     icon: IconBrain,
-    description: "Exploitez la puissance de vos données avec des solutions d'Intelligence Artificielle sur mesure pour automatiser, prédire et décider plus intelligemment.",
-    prestations: ["Tableaux de bord analytiques « narrés » par IA", "Déploiement de chatbots avancés (support, FAQ, RH…)", "Automatisation du traitement documentaire", "Solutions de scoring prospect et de prédiction"],
+    description: 'services.brain.desc',
+    prestations: [
+      "Systèmes RAG & Mémoire d'Entreprise",
+      "Centrale de Prédiction Décisionnelle",
+      "IA Générative Métier (Agents Autonomes)"
+    ]
   },
   {
-    slug: 'developpement-integration-digitale',
-    title: 'Développement & Intégration Digitale',
-    tagline: 'Construire les outils de votre performance.',
-    icon: IconCode,
-    description: "Création d'applications web, mobiles et intégration de systèmes pour fluidifier vos opérations et offrir des expériences utilisateur exceptionnelles.",
-    prestations: ["Développement d'applications web et mobiles sur mesure", "Intégration d'API et de services tiers", "Automatisation des workflows (RPA)", "Modernisation de systèmes hérités (Legacy)"],
+    slug: 'guard',
+    title: 'services.guard.title',
+    tagline: 'services.guard.mission',
+    icon: IconShield,
+    description: 'services.guard.desc',
+    prestations: [
+      "Audit de Résilience Globale (NIST, ISO 27001)",
+      "Architecture Zero-Trust & Verrouillage d'Accès",
+      "Souveraineté & Cloud Hybride",
+      "Plans de Continuité d’Activité (PCA)"
+    ]
   },
   {
-    slug: 'solutions-metier-fintech',
-    title: 'Solutions Métier & Fintech',
-    tagline: 'Des outils propriétaires pour vos besoins spécifiques.',
+    slug: 'fintech',
+    title: 'services.fintech.title',
+    tagline: 'services.fintech.mission',
     icon: IconBank,
-    description: "Conception de solutions de gestion métiers (CRM/ERP) propriétaires et de produits financiers innovants adaptés à votre secteur d'activité.",
-    prestations: ["Applications CRM/ERP propriétaires (Audit, Agro, PME)", "Développement de plateformes Fintech", "Produits financiers numériques sur mesure", "Systèmes de gestion de mandats et de facturation complexe"],
+    description: 'services.fintech.desc',
+    prestations: [
+      "Ingénierie des Flux Transfrontaliers",
+      "Gestion Multi-Devises Native (USD, EUR, XAF...)",
+      "Interopérabilité de Paiement & Unification des Revenus"
+    ]
   },
   {
-    slug: 'accompagnement-formation',
-    title: 'Accompagnement & Formation',
-    tagline: "Assurer l'adoption et la montée en compétences.",
-    icon: IconSchool,
-    description: "Nous formons vos équipes aux nouveaux outils et nouvelles méthodes pour garantir une adoption réussie de la transformation et maximiser le retour sur investissement.",
-    prestations: ["Formations sur mesure aux outils digitaux et IA", "Accompagnement au changement pour les équipes", "Coaching de managers sur le leadership digital", "Création de documentation et de supports pédagogiques"],
+    slug: 'dev',
+    title: 'services.dev.title',
+    tagline: 'services.dev.mission',
+    icon: IconCode,
+    description: 'services.dev.desc',
+    prestations: [
+      "Développement d'Applications Critiques (Scale-up)",
+      "Modernisation d'Actifs (Legacy-to-Cloud)",
+      "Architecture Haute Disponibilité"
+    ]
+  },
+  {
+    slug: 'flow',
+    title: 'services.flow.title',
+    tagline: 'services.flow.mission',
+    icon: IconFlow,
+    description: 'services.flow.desc',
+    prestations: [
+      "Automatisation de Flux Opérationnels",
+      "Orchestration Intelligente des Processus (BPM)",
+      "Réduction Radicale des Coûts Opérationnels"
+    ]
+  },
+  {
+    slug: 'academy',
+    title: 'services.academy.title',
+    tagline: 'services.academy.mission',
+    icon: IconDiploma,
+    description: 'services.academy.desc',
+    prestations: [
+      "DSI Externalisée (vCIO Stratégique)",
+      "Coaching de Direction & Gouvernance Numérique",
+      "Transfert de Compétence & Souveraineté d'Équipe"
+    ]
   },
 ];
 
 // Packages Data
 export const PACKAGES: Package[] = [
   {
-    name: 'Starter Digital Pack',
+    name: 'contact.needs.starter', // Updated to use key? No, PACKAGES struct implies name is string. I should probably use t() for this too.
     prices: {
       EUR: 1500,
       USD: 1650,
       XAF: 450000
     },
-    tagline: 'L\'essentiel pour poser vos bases digitales.',
+    tagline: 'home.packages.subtitle', // Using existing key for now or generic?
     features: [
-      'Audit Flash IT & maturité IA',
-      'Site vitrine Premium (SEO optimisé)',
-      'Automatisation d’un processus métier clé',
-      'Configuration email pro & Cybersécurité base',
-      'Accompagnement prise en main (2h)'
+      'Audit Flash',
+      'Site Web Premium',
+      'Automation',
+      'Cyber Basic'
     ],
-    ctaText: 'Démarrer maintenant',
+    ctaText: 'home.packages.cta',
   },
   {
-    name: 'Scale Up Pack',
+    name: 'contact.needs.scaleup',
     prices: {
       EUR: 3500,
       USD: 3850,
       XAF: 2100000
     },
-    tagline: 'Boostez votre productivité et passez à l\'échelle.',
+    tagline: 'Boost & Scale',
     features: [
-      'Tout le pack Starter',
-      'Roadmap de transformation complète',
-      'Tableaux de bord IA (Data Intelligence)',
-      'Chatbot Intelligent (Support ou Sales)',
-      'Audit sécurité & Conformité RGPD',
-      'Support prioritaire (Ticket J+1)'
+      'Pack Starter +',
+      'Roadmap Gain',
+      'Chatbot IA',
+      'Dashboard Data'
     ],
-    ctaText: 'Propulser mon business',
+    ctaText: 'home.packages.cta',
     isPopular: true,
   },
   {
-    name: 'Elite Innovation Pack',
+    name: 'contact.needs.elite',
     prices: undefined, // Sur Devis
-    tagline: 'L\'excellence technologique sur mesure.',
+    tagline: 'Domination',
     features: [
-      'Tout le pack Scale Up',
-      'Cadrage IA & RPA métier complexe',
-      'Développement d\'une App/CRM propriétaire',
-      'Supervision sécurité proactive (SOC)',
-      'DSI partagée & Conseil stratégique continu',
-      'Garantie de performance & SLA sur mesure'
+      'Pack Scale Up +',
+      'Custom App/CRM',
+      'SOC Cyber',
+      'DSI'
     ],
-    ctaText: 'Contacter un expert',
+    ctaText: 'contact.form.submit',
   },
 ];
 
@@ -155,6 +178,11 @@ export const SOCIAL_PROOF_STATS = [
   { value: '+60%', label: 'de gains de productivité' },
   { value: '80%', label: 'de risques cyber évités' },
   { value: 'Jusqu’à 6 mois', label: 'gagnés sur vos projets' },
+];
+
+export const CONTACT_FORM_NEEDS = [
+  'brain', 'guard', 'fintech', 'dev', 'flow', 'academy',
+  'starter', 'scaleup', 'elite', 'other'
 ];
 
 // Portfolio Data
@@ -401,7 +429,4 @@ Les réconciliations entre factures et relevés se font désormais à 98% sans i
   },
 ];
 
-export const CONTACT_FORM_NEEDS = [
-  'Audit & Cyber', 'Conseil Strat', 'Data & IA', 'Développement', 'Fintech & CRM', 'Formation',
-  'Pack Starter', 'Pack Scale Up', 'Pack Elite', 'Autre'
-];
+

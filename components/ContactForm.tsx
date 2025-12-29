@@ -41,24 +41,25 @@ const ContactForm: React.FC = () => {
   useEffect(() => {
     const packParam = searchParams.get('pack');
     if (packParam) {
-      let mappedNeed = '';
-      if (packParam === 'starter') mappedNeed = 'Pack Starter';
-      else if (packParam === 'scaleup') mappedNeed = 'Pack Scale Up';
-      else if (packParam === 'elite') mappedNeed = 'Pack Elite';
-
-      // Find exact match in CONTACT_FORM_NEEDS to avoid selection errors
-      const exactNeed = CONTACT_FORM_NEEDS.find(n => n === mappedNeed);
+      // Direct match since constants now use keys like 'starter', 'scaleup', 'elite'
+      const exactNeed = CONTACT_FORM_NEEDS.find(n => n === packParam);
 
       if (exactNeed) {
+        // Translate the package name (e.g. 'elite' -> 'Pack Souveraineté')
+        const packageName = t(`contact.needs.${exactNeed}`);
+
         setFormData(prev => ({
           ...prev,
           needs: exactNeed,
           source: 'ORDER', // Tag as Order
-          message: prev.message || `[COMMANDE] Je souhaite commander le ${exactNeed}.` // Pre-fill message
+          // Use translated package name in the message
+          message: prev.message || (i18n.language.startsWith('fr')
+            ? `[COMMANDE] Je souhaite commander le ${packageName}.`
+            : `[ORDER] I would like to order the ${packageName}.`)
         }));
       }
     }
-  }, [searchParams]);
+  }, [searchParams, t, i18n.language]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
@@ -80,6 +81,17 @@ const ContactForm: React.FC = () => {
     }));
     setError(null);
   };
+
+  // ... (keeping handleSubmit as is, handled by earlier read) 
+  // Wait, I can't jump lines. I need to Replace form content logic.
+  // The replace tool needs contiguous block. 
+  // Lines 41-61 covers useEffect.
+  // Lines 338-345 covers dropdown map.
+  // I should use MultiReplace or two calls. 
+  // I will split this into two calls or use MultiReplace.
+  // I'll use separate calls for clarity as they are far apart.
+  // This tool call handles useEffect (StartLine 41).
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -276,20 +288,30 @@ const ContactForm: React.FC = () => {
         />
       </div>
 
-      {/* Order Mode Banner */}
+      {/* Order Mode Banner - Premium Design */}
       {formData.source === 'ORDER' && (
-        <div className="bg-yellow-50 border-l-4 border-[#D4AF37] p-4 mb-6">
-          <div className="flex">
-            <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-[#D4AF37]" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
+        <div className="mb-8 relative overflow-hidden rounded-xl bg-[#0A1931] text-white p-6 md:p-8 shadow-2xl border border-[#D4AF37]/30 group">
+          {/* Background Effects */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37]/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-500/10 rounded-full blur-xl translate-y-1/2 -translate-x-1/2" />
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6 text-center md:text-left">
+            <div className="flex-shrink-0 p-4 bg-white/5 rounded-full border border-[#D4AF37]/50 shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+              <svg className="w-8 h-8 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
-            <div className="ml-3">
-              <p className="text-sm text-yellow-700">
-                Vous effectuez une demande de commande pour le <span className="font-bold">{formData.needs}</span>.
-                <br />
-                Un expert validera votre dossier sous 24h.
+
+            <div className="flex-grow">
+              <span className="text-[#D4AF37] text-xs font-bold uppercase tracking-[0.2em] mb-2 block">
+                Offre Sélectionnée
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">
+                {t(`contact.needs.${formData.needs}`, formData.needs)}
+              </h3>
+              <div className="w-12 h-1 bg-[#D4AF37] rounded-full mb-4 mx-auto md:mx-0 opacity-50" />
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Vous êtes sur le point d'activer un levier de croissance majeur.
+                <br className="hidden md:block" />
+                Un expert du Haut Commandement validera votre dossier technique sous 24h.
               </p>
             </div>
           </div>
@@ -346,22 +368,14 @@ const ContactForm: React.FC = () => {
         >
           {CONTACT_FORM_NEEDS
             .filter(need => {
-              // If ORDER mode, only show the specific package (or all packages? User said "pack ne se choisissent que lors de leur choix dans page package")
-              // Actually, if ORDER, it is disabled anyway (line 335).
-              // User wants: "par défaut... on ne dois pas etre capable de choisir... les pack".
-              // So if NOT ORDER, exclude packs.
+              // If NOT ORDER mode, exclude packs
               if (formData.source !== 'ORDER') {
-                return !need.includes('Pack');
+                return !['starter', 'scaleup', 'elite'].includes(need);
               }
-              return true; // If ORDER, show all (it's disabled anyway so it shows the selected one)
+              return true;
             })
             .map(need => {
-              const keyMap: Record<string, string> = {
-                'Audit & Cyber': 'audit', 'Conseil Strat': 'conseil', 'Data & IA': 'data',
-                'Développement': 'dev', 'Fintech & CRM': 'fintech', 'Formation': 'formation',
-                'Pack Starter': 'starter', 'Pack Scale Up': 'scaleup', 'Pack Elite': 'elite', 'Autre': 'other'
-              };
-              return <option key={need} value={need}>{t(`contact.needs.${keyMap[need] || 'other'}`, need)}</option>;
+              return <option key={need} value={need}>{t(`contact.needs.${need}`, need)}</option>;
             })}
         </select>
       </div>

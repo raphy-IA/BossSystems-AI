@@ -12,6 +12,7 @@ import ProjectDetailPage from './pages/ProjectDetailPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostDetailPage from './pages/BlogPostDetailPage';
 import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 import ScrollToTop from './components/ScrollToTop';
 
 const ChatWidget: React.FC = () => (
@@ -36,6 +37,7 @@ export default function App() {
             <main>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesHubPage />} />
                 <Route path="/services/:slug" element={<ServiceDetailPage />} />
                 <Route path="/packages" element={<PackagesPage />} />

@@ -32,19 +32,7 @@ const Header: React.FC = () => {
   const navLinkClasses = "text-white hover:text-[#D4AF37] transition-colors duration-200 text-sm xl:text-base";
   const activeLinkClasses = { color: '#D4AF37' };
 
-  // Helper to get translated link name from key
-  const getNavLabel = (name: string) => {
-    const map: Record<string, string> = {
-      'Accueil': 'home',
-      'Nos Services': 'services',
-      'Offres Packagées': 'packages',
-      'Réalisations': 'portfolio',
-      'Ressources': 'blog',
-      'Contact': 'contact'
-    };
-    const key = map[name];
-    return key ? t(`common.nav.${key}`) : name;
-  };
+  // Helper removed, using t() directly with keys from constants
 
   return (
     <header className="bg-[#0A1931] sticky top-0 z-50 shadow-md border-b border-white/10">
@@ -59,14 +47,14 @@ const Header: React.FC = () => {
             link.subLinks ? (
               <div key={link.name} className="relative" onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
                 <RouterNavLink to={link.path} className={({ isActive }) => `${navLinkClasses} flex items-center`} style={({ isActive }) => isActive ? activeLinkClasses : {}}>
-                  {getNavLabel(link.name)}
+                  {t(link.name)}
                   <svg className={`w-4 h-4 ml-1 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                 </RouterNavLink>
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 mt-2 w-72 bg-[#0A1931] border border-gray-700 rounded-md shadow-lg py-2">
                     {link.subLinks.map(subLink => (
                       <RouterNavLink key={subLink.name} to={subLink.path} className="block px-4 py-2 text-sm text-white hover:bg-[#D4AF37] hover:text-[#0A1931]">
-                        {subLink.name} {/* sublinks are dynamic services, will need separate translation logic later */}
+                        {t(subLink.name)}
                       </RouterNavLink>
                     ))}
                   </div>
@@ -74,7 +62,7 @@ const Header: React.FC = () => {
               </div>
             ) : (
               <RouterNavLink key={link.name} to={link.path} className={({ isActive }) => navLinkClasses} style={({ isActive }) => isActive ? activeLinkClasses : {}}>
-                {getNavLabel(link.name)}
+                {t(link.name)}
               </RouterNavLink>
             )
           ))}
@@ -108,15 +96,15 @@ const Header: React.FC = () => {
             {NAV_LINKS.map((link) => (
               !link.subLinks ? (
                 <RouterNavLink key={link.name} to={link.path} className="block text-white hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>
-                  {link.name}
+                  {t(link.name)}
                 </RouterNavLink>
               ) : (
                 <div key={link.name}>
-                  <RouterNavLink to={link.path} className="block text-white hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>{link.name}</RouterNavLink>
+                  <RouterNavLink to={link.path} className="block text-white hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>{t(link.name)}</RouterNavLink>
                   <div className="pl-4 mt-1 space-y-1">
                     {link.subLinks.map(subLink => (
                       <RouterNavLink key={subLink.name} to={subLink.path} className="block text-gray-300 hover:text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>
-                        {subLink.name}
+                        {t(subLink.name)}
                       </RouterNavLink>
                     ))}
                   </div>

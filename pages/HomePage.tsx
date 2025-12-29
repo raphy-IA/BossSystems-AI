@@ -192,9 +192,10 @@ const ServicesSection: React.FC = () => {
               <div className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0A1931] transition-colors overflow-hidden">
                 <service.icon className="w-12 h-12 text-[#0A1931] group-hover:text-[#D4AF37] transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0A1931] mb-4 leading-tight group-hover:text-[#D4AF37] transition-colors">{service.title}</h3>
+              <h3 className="text-2xl font-bold text-[#0A1931] mb-2 leading-tight group-hover:text-[#D4AF37] transition-colors">{t(service.title)}</h3>
+              <p className="text-[#D4AF37] font-semibold mb-4 text-sm uppercase tracking-wider">{t(service.tagline)}</p>
               <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
-                {service.tagline}
+                {t(service.description)}
               </p>
             </Link>
           ))}
@@ -215,7 +216,7 @@ const PackagesSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {PACKAGES.map(pkg => (
             <div key={pkg.name} className="bg-white/5 p-10 rounded-3xl border border-white/10 flex flex-col hover:border-[#D4AF37]/50 transition-colors group">
-              <h3 className="text-2xl font-bold text-[#D4AF37] mb-6">{pkg.name}</h3>
+              <h3 className="text-2xl font-bold text-[#D4AF37] mb-6">{t(pkg.name)}</h3>
               <ul className="text-left space-y-4 text-gray-300 flex-grow mb-10">
                 {pkg.features.map(feature => (
                   <li key={feature} className="flex items-start gap-3">
@@ -227,7 +228,7 @@ const PackagesSection: React.FC = () => {
                 ))}
               </ul>
               <Link to="/packages" className="mt-auto bg-[#D4AF37] text-[#0A1931] font-bold py-4 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300">
-                {t('home.packages.cta')}
+                {t(pkg.ctaText)}
               </Link>
             </div>
           ))}
@@ -281,8 +282,8 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Agence IA & IT Innovante | BOSS SYSTEMS AI</title>
-        <meta name="description" content="Débridez votre potentiel numérique avec BOSS SYSTEMS AI. Experts en Intelligence Artificielle et solutions IT pour transformer votre entreprise." />
+        <title>L’Architecte de votre Souveraineté Augmentée | BOSS SYSTEMS AI</title>
+        <meta name="description" content="BOSS SYSTEMS AI : L’Architecte de votre Souveraineté Augmentée. Intelligence Artificielle, Cybersécurité et Fintech pour une domination intercontinentale." />
       </Helmet>
       <HeroSection />
       <IntroSection />

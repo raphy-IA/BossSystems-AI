@@ -30,13 +30,45 @@ const ServicesHubPage: React.FC = () => {
               <div className="flex justify-center mb-6">
                 <service.icon className="w-20 h-20 text-[#0A1931] group-hover:text-[#D4AF37] transition-colors duration-300" />
               </div>
-              <h2 className="text-2xl font-bold text-[#0A1931] mb-3">{t(`services.items.${service.slug}.title`, service.title)}</h2>
-              <p className="text-gray-600 flex-grow">{t(`services.items.${service.slug}.tagline`, service.tagline)}</p>
+              <h2 className="text-2xl font-bold text-[#0A1931] mb-2">{t(service.title)}</h2>
+              <p className="text-[#D4AF37] font-semibold mb-4 text-sm uppercase tracking-wider">{t(service.tagline)}</p>
+              <p className="text-gray-600 flex-grow leading-relaxed">{t(service.description)}</p>
               <span className="mt-6 text-[#D4AF37] font-semibold group-hover:underline">
                 {t('common.nav.cta', 'En savoir plus')} &rarr;
               </span>
             </Link>
           ))}
+        </div>
+
+        {/* IMPACT Protocol / Pillars Section */}
+        <div className="mt-24 max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#0A1931]">{t('methodology.title')}</h2>
+            <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="p-6 bg-white rounded-lg shadow border-l-4 border-[#D4AF37]">
+              <div className="text-4xl font-black text-[#D4AF37]/20 mb-2">01</div>
+              <h3 className="text-xl font-bold text-[#0A1931] mb-2">{t('methodology.step1').split('(')[0]}</h3>
+              <p className="text-sm text-gray-600">{t('methodology.step1').match(/\((.*?)\)/)?.[1] || t('methodology.step1')}</p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow border-l-4 border-[#0A1931]">
+              <div className="text-4xl font-black text-[#0A1931]/20 mb-2">02</div>
+              <h3 className="text-xl font-bold text-[#0A1931] mb-2">{t('methodology.step2').split('(')[0]}</h3>
+              <p className="text-sm text-gray-600">{t('methodology.step2').match(/\((.*?)\)/)?.[1] || t('methodology.step2')}</p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow border-l-4 border-[#D4AF37]">
+              <div className="text-4xl font-black text-[#D4AF37]/20 mb-2">03</div>
+              <h3 className="text-xl font-bold text-[#0A1931] mb-2">{t('methodology.step3').split('(')[0]}</h3>
+              <p className="text-sm text-gray-600">{t('methodology.step3').match(/\((.*?)\)/)?.[1] || t('methodology.step3')}</p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow border-l-4 border-[#0A1931]">
+              <div className="text-4xl font-black text-[#0A1931]/20 mb-2">04</div>
+              <h3 className="text-xl font-bold text-[#0A1931] mb-2">{t('methodology.step4').split('(')[0]}</h3>
+              <p className="text-sm text-gray-600">{t('methodology.step4').match(/\((.*?)\)/)?.[1] || t('methodology.step4')}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

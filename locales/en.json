@@ -1,46 +1,295 @@
 {
+    "brand": {
+        "name": "BOSS SYSTEMS AI",
+        "slogan": "The Architect of your Augmented Sovereignty"
+    },
     "common": {
         "from": "From",
         "nav": {
             "home": "Home",
-            "services": "Our Services",
+            "about": "Doctrine",
+            "services": "Strike Units",
             "packages": "Packages",
             "portfolio": "Portfolio",
             "blog": "Resources",
-            "contact": "Contact",
-            "cta": "Book an expert"
+            "contact": "Induction",
+            "cta": "Activate Your Flash Audit"
         },
         "footer": {
-            "tagline": "Technological excellence serving the ambitions of tomorrow. Expertise in AI, Cybersecurity and Business Solutions for innovative SMEs.",
+            "tagline": "Command is not delegated, it is augmented. Boss Systems AI: Digital Sovereignty Architecture.",
             "cta": {
                 "title": "Ready to propel your business into the future?",
                 "subtitle": "Let's discuss your technological challenges today.",
                 "button": "Book an expert"
             },
+            "links": {
+                "services": "Unités",
+                "company": "Headquarters",
+                "legal": "Legal"
+            },
             "sections": {
-                "expertise": "Key Expertises",
-                "explore": "Explore",
-                "contact": "Contact Details"
+                "expertise": "Strategic Expertise",
+                "explore": "Navigation",
+                "contact": "Direct Line"
             },
             "labels": {
-                "email": "Email",
-                "location": "Location",
-                "locationValue": "Global Service & Remote Expertise"
+                "email": "Secure Channel",
+                "location": "Headquarters",
+                "locationValue": "Global Strategic Reach"
             },
             "legal": {
+                "rights": "All rights reserved.",
                 "mentions": "Legal Mentions",
                 "privacy": "Privacy Policy",
-                "terms": "Terms of Service",
-                "rights": "Excellence in the service of AI."
+                "terms": "Terms of Use"
+            }
+        }
+    },
+    "methodology": {
+        "title": "The IMPACT Protocol",
+        "step1": "Flash Audit (Vulnerability Diagnosis)",
+        "step2": "ROI Roadmap (Gain Trajectory)",
+        "step3": "Agile Deployment (Asset Injection)",
+        "step4": "Sovereign Steering (Power Optimization)"
+    },
+    "about": {
+        "hero": {
+            "title": "Sovereignty Doctrine",
+            "subtitle": "Manifesto for Unapologetic Technological Dominance."
+        },
+        "story": {
+            "title": "Power Axiom",
+            "content": "In an economy of economic warfare, neutrality is a weakness.\nBSA is not an IT Service Company, it is a digital militia dedicated to your supremacy.\n\nWe refuse the fatality of technological dependence. We build citadels."
+        },
+        "poles": {
+            "title": "Dual Architecture",
+            "gold": {
+                "title": "GOLD Pole",
+                "desc": "Vision, strategy, financial flows. It is the brain that orders the conquest."
+            },
+            "navy": {
+                "title": "NAVY Pole",
+                "desc": "Code, infrastructure, security. It is the muscle that executes and protects."
+            }
+        },
+        "values": {
+            "title": "The Agnostic Code"
+        },
+        "cta": {
+            "title": "Join the Elite",
+            "button": "Activate my Audit"
+        }
+    },
+    "contact": {
+        "page": {
+            "title": "Induction Process",
+            "subtitle": "Whether for a free audit, a question about our services, or a specific project, we are at your disposal.",
+            "orderTitle": "Order Confirmation",
+            "orderSubtitle": "You have selected a strategic offer. Complete the form below to validate your request.",
+            "option1": "Book an appointment with one of our experts",
+            "option2": "Written Transmission of Your Needs"
+        },
+        "unit_label": "Relevant Strike Unit",
+        "message_placeholder": "Which assets do you wish to sanctuarize?",
+        "submit": "Submit for Diagnosis",
+        "success": "Induction request received. Your sovereignty diagnosis is being prepared.",
+        "form": {
+            "name": "Identity (Full Name)",
+            "email": "Comms Channel (Email)",
+            "company": "Entity (Company)",
+            "phone": "Direct Line",
+            "need": "Target:",
+            "message": "Current Situation & Objectives",
+            "submit": "Initiate Induction",
+            "successTitle": "Transmission Successful",
+            "success": "Your file has been transmitted to central command.",
+            "error": "Transmission Failed. Retry.",
+            "errorConsent": "Protocol validation required.",
+            "privacy": "I validate the confidentiality protocol and authorize data analysis.",
+            "sending": "Transmitting...",
+            "security": "Human Verification",
+            "mathLabel": "Solve: {{a}} + {{b}}",
+            "mathError": "Calculation error.",
+            "spamError": "Anomaly detected."
+        },
+        "needs": {
+            "brain": "BSA Brain (AI)",
+            "guard": "BSA Guard (Cyber)",
+            "fintech": "BSA Fintech (Finance)",
+            "dev": "BSA Dev (Engineering)",
+            "flow": "BSA Flow (Automation)",
+            "academy": "BSA Academy (Training)",
+            "starter": "Initiation Pack",
+            "scaleup": "Expansion Pack",
+            "elite": "Sovereignty Pack",
+            "other": "Other Strategic Request"
+        }
+    },
+    "services": {
+        "page": {
+            "title": "Strike Units",
+            "subtitle": "Explore our expertise areas to propel your performance and secure your future."
+        },
+        "title": "Strategic Strike Units",
+        "subtitle": "Explore our 6 power vectors. Each unit is specialized to turn your technical challenges into growth opportunities.",
+        "cta": "Explore Unit",
+        "brain": {
+            "title": "BSA Brain",
+            "mission": "AI & Decision Intelligence",
+            "desc": "Turn raw data into strategic gold. We build your corporate \"Second Brain\" to automate decision-making and predict your future markets."
+        },
+        "guard": {
+            "title": "BSA Guard",
+            "mission": "Cyber-Resilience & Immunity",
+            "desc": "Sleep soundly. We deploy an impenetrable protection dome around your critical assets, ensuring absolute business continuity against cyber threats."
+        },
+        "fintech": {
+            "title": "BSA Fintech",
+            "mission": "Financial Engineering & Flux",
+            "desc": "Free your treasury from global friction. Our multi-currency payment architectures optimize your financial flows for borderless profitability."
+        },
+        "dev": {
+            "title": "BSA Dev",
+            "mission": "High-Performance Engineering",
+            "desc": "Code is your weapon of war. We develop robust, scalable platforms custom-designed to support your hyper-growth without faltering."
+        },
+        "flow": {
+            "title": "BSA Flow",
+            "mission": "Automation & Productivity",
+            "desc": "Eliminate busywork. We orchestrate radical automation of repetitive tasks to unleash the creative genius of your human teams."
+        },
+        "academy": {
+            "title": "BSA Academy",
+            "mission": "Governance & Transmission",
+            "desc": "Power cannot be bought, it must be learned. We train your leaders and elite teams to master the technologies that will shape tomorrow's world."
+        }
+    },
+    "portfolio": {
+        "page": {
+            "title": "Executed Operations",
+            "subtitle": "Concrete examples of power deployment and strategic gains for our partners.",
+            "cta": "Read Report"
+        },
+        "cases": {
+            "1": {
+                "client": "IndustrieTech",
+                "title": "Industrial Sales Optimization",
+                "desc": "Deployment of AI CRM increasing qualified leads by 30%."
+            },
+            "2": {
+                "client": "ShopSecure",
+                "title": "Critical E-commerce Security",
+                "desc": "Audit and multilayer protection reducing incidents by 95%."
+            },
+            "3": {
+                "client": "ServiceFirst",
+                "title": "Customer Support Automation",
+                "desc": "AI Chatbot handling 70% of requests with total autonomy."
+            },
+            "4": {
+                "client": "AgriData AI",
+                "title": "Predictive Agricultural AI",
+                "desc": "Satellite analysis to optimize yields and irrigation."
+            },
+            "5": {
+                "client": "LegalFlow",
+                "title": "Legal RPA Automation",
+                "desc": "Automated document processing: from 15h to 2h weekly management."
+            },
+            "6": {
+                "client": "CyberGuard 360",
+                "title": "SOC & Real-Time Detection",
+                "desc": "AI supervision center detecting anomalies in minutes."
+            },
+            "7": {
+                "client": "Consulto Group",
+                "title": "Custom Business CRM",
+                "desc": "Mandate management and automated billing for consulting firm."
+            },
+            "8": {
+                "client": "BankFlow Solutions",
+                "title": "Fintech Predictive Treasury",
+                "desc": "Cash-flow forecasting AI and automated bank reconciliation."
+            },
+            "9": {
+                "client": "OmniMarket",
+                "title": "Smart Stock Management",
+                "desc": "Retail ERP with automatic replenishment and predictive alerts."
+            }
+        }
+    },
+    "blog": {
+        "page": {
+            "title": "Strategic Resources",
+            "subtitle": "Intelligence, Analysis and Doctrines for Leaders.",
+            "readMore": "Access Resource"
+        },
+        "posts": {
+            "1": {
+                "title": "How AI transforms SMEs in 2025",
+                "excerpt": "Competitiveness levers and concrete AI applications for businesses."
+            },
+            "2": {
+                "title": "5 Cyber Threats to Watch",
+                "excerpt": "Overview of major risks and defense strategies for 2026."
+            },
+            "3": {
+                "title": "ROI of Digital Transformation",
+                "excerpt": "Myth or reality? How to measure the real financial impact of your investments."
+            },
+            "4": {
+                "title": "RPA Automation & Profitability",
+                "excerpt": "The invisible lever to eliminate time-consuming tasks."
+            },
+            "5": {
+                "title": "Custom ERP vs Standard",
+                "excerpt": "Why custom-made is often more profitable than generic solutions."
+            },
+            "6": {
+                "title": "Fintech 2026: Autonomous Treasury",
+                "excerpt": "Towards predictive and automated financial management."
             }
         }
     },
     "home": {
         "hero": {
-            "title": "Artificial Intelligence at the Service of Your Performance",
-            "subtitle": "Accelerate your digital transformation with our custom AI solutions, IT audit, and cybersecurity.",
-            "ctaStart": "Start Your Transformation",
-            "ctaPortfolio": "See Our Work"
+            "title": "Reclaim Command of Your Infrastructure",
+            "subtitle": "We transform technological complexity into operational fortresses. AI, Cybersecurity, and Fintech for flawless intercontinental dominance.",
+            "ctaStart": "Start My Sovereignty Diagnosis",
+            "ctaPortfolio": "View Assets"
+        },
+        "intro": {
+            "title": "The Architect of Your Sovereignty",
+            "description": "We are not just IT providers. We are your combat partners in building sustainable technological dominance. Our approach combines military-grade technical expertise with pragmatic business vision.",
+            "audit": {
+                "title": "Audit & Immediate ROI",
+                "desc": "Identify security gaps and hidden growth levers for measurable financial impact within the first few weeks."
+            },
+            "custom": {
+                "title": "Tailored Architecture",
+                "desc": "No generic solutions. We design elite systems custom-tailored to your specific sector challenges (Finance, Industry, Services)."
+            },
+            "partner": {
+                "title": "Strategic Alliance",
+                "desc": "More than a provider, a trusted partner committed to the long-term empowerment and autonomy of your teams."
+            }
+        },
+        "services": {
+            "title": "Strike Units",
+            "subtitle": "Explore our 6 power vectors for total digital dominance.",
+            "cta": "View all units"
+        },
+        "packages": {
+            "title": "Packaged Command",
+            "subtitle": "Turnkey solutions for rapid deployment.",
+            "cta": "Subscribe to success"
+        },
+        "stats": {
+            "title": "Measured Impact"
+        },
+        "cta": {
+            "title": "Take Control",
+            "description": "Your transformation starts with one decision."
         },
         "hero2": {
             "title": "AI at the Service of Your Growth",
@@ -53,440 +302,6 @@
             "subtitle": "High-level Cyber Audit and proprietary business CRMs adapted to your needs.",
             "ctaStart": "Contact an Expert",
             "ctaPortfolio": "Packaged Offers"
-        },
-        "intro": {
-            "title": "Why Choose Boss Systems AI?",
-            "description": "At BOSS SYSTEMS AI, we support ambitious companies in their digital transformation. Our approach combines technical expertise, strategic vision, and an obsession for concrete results.",
-            "audit": {
-                "title": "Audit & Immediate ROI",
-                "desc": "We quickly identify growth and security levers for a measurable impact from the very first weeks."
-            },
-            "custom": {
-                "title": "Business Customization",
-                "desc": "No generic solutions. Our tools are tailored to your sector challenges (Audit, Agro, SME, Fintech)."
-            },
-            "partner": {
-                "title": "Global Partner",
-                "desc": "Long-term trusted relationship, change management support, and continuous assistance for your teams."
-            }
-        },
-        "services": {
-            "title": "Our Expertise",
-            "subtitle": "Explore our areas of specialization to propel your digital performance.",
-            "cta": "See the whole hub"
-        },
-        "packages": {
-            "title": "Our Packages",
-            "subtitle": "Ready-to-use solutions to accelerate your digital growth with ease.",
-            "cta": "Subscribe to Success"
-        },
-        "stats": {
-            "title": "Real Impact on Your Business"
-        },
-        "cta": {
-            "title": "Make the Pivot to AI",
-            "description": "Describe your challenges. Our experts analyze your situation and propose a free roadmap."
-        }
-    },
-    "packages": {
-        "page": {
-            "title": "Solutions Tailored to Your Growth",
-            "subtitle": "Compare our offers and choose the pack that best matches your ambition and digital maturity."
-        },
-        "starter": {
-            "name": "Starter Digital Pack",
-            "tagline": "The essentials to lay your digital foundations.",
-            "price": "From €1,500",
-            "features": {
-                "audit": "Flash IT & AI Maturity Audit",
-                "site": "Premium Showcase Website (SEO Optimized)",
-                "automation": "Automation of a key business process",
-                "email": "Pro Email Setup & Basic Cybersecurity",
-                "support": "Onboarding Support (2h)"
-            },
-            "cta": "Start Now"
-        },
-        "scaleup": {
-            "name": "Scale Up Pack",
-            "tagline": "Boost productivity and scale your business.",
-            "price": "From €3,500",
-            "features": {
-                "all_starter": "Everything in Starter Pack",
-                "roadmap": "Complete Transformation Roadmap",
-                "dashboard": "AI Dashboards (Data Intelligence)",
-                "chatbot": "Intelligent Chatbot (Support or Sales)",
-                "audit_sec": "Security Audit & GDPR Compliance",
-                "support_prio": "Priority Support (Next Day Ticket)"
-            },
-            "cta": "Propel My Business",
-            "badge": "Recommended",
-            "investment": "Investment"
-        },
-        "elite": {
-            "name": "Elite Innovation Pack",
-            "tagline": "Custom technological excellence.",
-            "price": "Custom Quote",
-            "features": {
-                "all_scaleup": "Everything in Scale Up Pack",
-                "ai_complex": "Complex AI & RPA Scoping",
-                "app_dev": "Proprietary App/CRM Development",
-                "soc": "Proactive Security Supervision (SOC)",
-                "dsi": "Shared CIO & Continuous Strategic Consulting",
-                "sla": "Performance Guarantee & Custom SLA"
-            },
-            "cta": "Contact an Expert"
-        }
-    },
-    "contact": {
-        "page": {
-            "title": "Contact an Expert",
-            "subtitle": "Whether for a free audit, a question about our services, or a specific project, we are at your disposal.",
-            "orderTitle": "Finalize your Order",
-            "orderSubtitle": "You are about to transform your business. Verify your information below to receive your order form.",
-            "option1": "Option 1: Instant Appointment Booking",
-            "option2": "Option 2: Detailed Contact Form"
-        },
-        "form": {
-            "name": "Full Name",
-            "email": "Professional Email",
-            "company": "Company",
-            "phone": "Phone",
-            "need": "My need concerns:",
-            "message": "Your message (optional)",
-            "submit": "Start the discussion",
-            "success": "Message sent successfully!",
-            "successTitle": "Thank you!",
-            "error": "Error during sending.",
-            "errorConsent": "Please accept the privacy policy.",
-            "privacy": "I accept the privacy policy and that my data be used to contact me.",
-            "sending": "Sending in progress...",
-            "security": "Anti-Robot Security",
-            "mathLabel": "How much is {{a}} + {{b}}?",
-            "mathError": "Incorrect answer.",
-            "spamError": "Suspicious activity detected."
-        },
-        "needs": {
-            "audit": "Audit & Cybersecurity",
-            "conseil": "Strategic Consulting",
-            "data": "Data & AI",
-            "dev": "Web/App Development",
-            "fintech": "Fintech/CRM Solutions",
-            "formation": "Training & Support",
-            "starter": "Starter Pack",
-            "scaleup": "Scale Up Pack",
-            "elite": "Elite Pack",
-            "other": "Other request"
-        }
-    },
-    "portfolio": {
-        "page": {
-            "title": "Our Achievements & Case Studies",
-            "subtitle": "Discover how we have helped companies like yours achieve their goals.",
-            "cta": "Learn More"
-        },
-        "cases": {
-            "1": {
-                "title": "Sales Optimization for Industrial SME",
-                "desc": "Deployment of a CRM and AI scoring tools, resulting in a 30% increase in qualified leads.",
-                "client": "IndustrieTech",
-                "overview": "IndustrieTech faced a long sales cycle and difficulties in prioritizing its prospects.",
-                "challenges": [
-                    "Data silos between marketing and sales",
-                    "Manual lead qualification process",
-                    "Lack of visibility on the conversion funnel"
-                ],
-                "solutions": [
-                    "Salesforce CRM integration with AI scoring",
-                    "Automation of personalized email sequences",
-                    "Real-time performance dashboards"
-                ],
-                "results": [
-                    "+30% qualified leads in 6 months",
-                    "-20% on sales cycle duration",
-                    "Increased commercial team productivity"
-                ]
-            },
-            "2": {
-                "title": "E-commerce Infrastructure Security",
-                "desc": "Complete audit and implementation of a multi-layer security policy, reducing incidents by 95%.",
-                "client": "ShopSecure",
-                "overview": "ShopSecure suffered multiple DDoS attacks putting its seasonal activity at risk.",
-                "challenges": [
-                    "Critical vulnerabilities on the payment platform",
-                    "Absence of Business Continuity Plan (BCP)",
-                    "Poorly configured cloud infrastructure"
-                ],
-                "solutions": [
-                    "WAF (Web Application Firewall) implementation",
-                    "Migration to a secure cloud architecture (AWS)",
-                    "Configuration of immutable backups"
-                ],
-                "results": [
-                    "Zero service interruption during Black Friday",
-                    "-95% successful intrusion attempts",
-                    "GDPR and PCI-DSS compliance validated"
-                ]
-            },
-            "3": {
-                "title": "Customer Support Automation",
-                "desc": "Integration of an intelligent chatbot handling 70% of level 1 requests autonomously.",
-                "client": "ServiceFirst",
-                "overview": "ServiceFirst was overwhelmed by simple and repetitive requests, blocking its agents on low value-added tasks.",
-                "challenges": [
-                    "Customer wait time too high",
-                    "Support team overload",
-                    "Inconsistency of responses across channels"
-                ],
-                "solutions": [
-                    "Deployment of an AI conversational agent (LLM)",
-                    "Centralized and self-learning knowledge base",
-                    "Intelligent escalation to humans for complex cases"
-                ],
-                "results": [
-                    "70% of requests resolved without human intervention",
-                    "Customer satisfaction (CSAT) up by 25%",
-                    "Operational costs reduced by 40%"
-                ]
-            },
-            "4": {
-                "title": "Predictive AI for Agriculture",
-                "desc": "Analysis of satellite data and IoT sensors to predict yields and optimize irrigation.",
-                "client": "AgriData AI",
-                "overview": "AgriData AI wanted to provide farmers with precise decision-making tools to cope with climate change.",
-                "challenges": [
-                    "Massive volume of heterogeneous data (weather, soil, images)",
-                    "Difficulty proving forecasts at local scale",
-                    "Need for a simple interface for non-experts"
-                ],
-                "solutions": [
-                    "Machine Learning models trained on multispectral data",
-                    "Integration of LoRaWAN IoT sensors on site",
-                    "Mobile application with personalized agronomic advice"
-                ],
-                "results": [
-                    "Irrigation optimization (20% water processed)",
-                    "Yield forecast accuracy of 92%",
-                    "Massive adoption by over 500 farms"
-                ]
-            },
-            "5": {
-                "title": "Document Automation (RPA)",
-                "desc": "Automated processing of complex legal files, reducing management time from 15h to 2h per week.",
-                "client": "LegalFlow",
-                "overview": "LegalFlow was losing thousands of billable hours on data entry and document classification.",
-                "challenges": [
-                    "Processing large volumes of unstructured documents",
-                    "High risk of human data entry errors",
-                    "Processing delays impacting client relationship"
-                ],
-                "solutions": [
-                    "Advanced OCR coupled with AI semantic analysis",
-                    "RPA workflows to sync files with business software",
-                    "Integrated automatic electronic signature"
-                ],
-                "results": [
-                    "Gain of 13h per week per employee",
-                    "Complete eradication of data entry errors",
-                    "Case processing speed increased by 300%"
-                ]
-            },
-            "6": {
-                "title": "SOC & Real-Time Threat Detection",
-                "desc": "Implementation of a Security Operations Center (SOC) with proactive AI anomaly detection.",
-                "client": "CyberGuard 360",
-                "overview": "CyberGuard 360 needed total visibility into its clients' infrastructure to react instantly to threats.",
-                "challenges": [
-                    "Fragmented logs difficult to analyze",
-                    "Multiplication of complex attacks (APT)",
-                    "Alert fatigue for analysts"
-                ],
-                "solutions": [
-                    "Deployment of modern SIEM/SOAR solution",
-                    "Behavioral anomaly detection algorithms",
-                    "Incident response automation system"
-                ],
-                "results": [
-                    "Detection Time (MTTD) reduced from days to minutes",
-                    "Automation of 80% of response tasks",
-                    "Securing over 5000 critical endpoints"
-                ]
-            },
-            "7": {
-                "title": "Business CRM for Consulting Firm",
-                "desc": "Design of a proprietary application for managing mandates, resources, and automated billing.",
-                "client": "Consulto Group",
-                "overview": "Consulto Group used multiple disparate tools to manage missions, leading to billing errors and lost profitability visibility.",
-                "challenges": [
-                    "Difficulty tracking hours per employee",
-                    "Manual and time-consuming billing process",
-                    "Lack of consolidated view of performance by mandate"
-                ],
-                "solutions": [
-                    "Development of custom proprietary CRM",
-                    "Automated fee and expense calculation engine",
-                    "Real-time profitability dashboards"
-                ],
-                "results": [
-                    "80% reduction in time spent on billing",
-                    "Total visibility on margin per project",
-                    "Consultant utilization rate improved by 15%"
-                ]
-            },
-            "8": {
-                "title": "Predictive Cash Flow Platform",
-                "desc": "Development of a Fintech solution using AI to predict cash flows and automate reconciliations.",
-                "client": "BankFlow Solutions",
-                "overview": "BankFlow Solutions wanted to offer its SME clients proactive visibility into their financing needs.",
-                "challenges": [
-                    "Complexity of multi-account bank reconciliation",
-                    "Instability of cash flow forecasts",
-                    "Need for institutional-level bank security"
-                ],
-                "solutions": [
-                    "Machine Learning algorithms for trend analysis",
-                    "Bank API integration (Open Banking)",
-                    "Financial scenario simulation modules"
-                ],
-                "results": [
-                    "30-day forecast accuracy greater than 95%",
-                    "Automation of 90% of bank reconciliations",
-                    "Early detection of default risks"
-                ]
-            },
-            "9": {
-                "title": "Retail/ERP Management Automation",
-                "desc": "Implementation of an automatic inventory and replenishment management system for agri-food SME.",
-                "client": "OmniMarket",
-                "overview": "OmniMarket suffered from frequent stockouts and costly overstocking on certain perishable references.",
-                "challenges": [
-                    "Archaic multi-warehouse stock management",
-                    "Lack of seasonal demand prediction",
-                    "Significant losses due to expiration dates"
-                ],
-                "solutions": [
-                    "Deployment of mini-ERP with intelligent replenishment module",
-                    "Predictive alert system on expiration dates",
-                    "Integration with supplier systems"
-                ],
-                "results": [
-                    "Reduction of stockouts by 45%",
-                    "-30% losses on perishables",
-                    "Working capital optimization of 20%"
-                ]
-            }
-        }
-    },
-    "blog": {
-        "page": {
-            "title": "Resources & Blog",
-            "subtitle": "Our analyses, tips, and feedback on IT, AI, and digital transformation.",
-            "readMore": "Read more",
-            "back": "Back to resources",
-            "cta": {
-                "title": "Was this article useful?",
-                "text": "Share your ambitions with us for a personalized analysis.",
-                "button": "Talk to an expert"
-            },
-            "related": "Other suggested readings"
-        },
-        "posts": {
-            "1": {
-                "title": "How AI can transform your SME in 2025",
-                "excerpt": "Discover the concrete applications of artificial intelligence that are within reach of small and medium-sized enterprises today.",
-                "content": "## AI: More Than a Buzzword for SMEs in 2025\n\nIn 2025, Artificial Intelligence is no longer reserved for Tech giants. For SMEs, it represents an unprecedented lever for competitiveness. But where to start?\n\n### 1. Automation of Administrative Tasks\nAI can now handle invoice entry, document filing, and even responding to redundant emails. Estimated time saved: **up to 15 hours per week** for your administrative teams.\n\n### 2. Customer Relationship Personalization\nThanks to LLMs (Large Language Models), you can offer 24/7 customer support that truly understands your interlocutors' needs, with the same finesse as a human agent.\n\n### 3. Simple Predictive Analytics\nPredicting your stock needs or activity peaks has never been so accessible. Modern AI tools analyze your historical data to prevent stockouts or overstocking.\n\n**Conclusion:** The challenge of 2025 is not knowing if you will use AI, but to what extent it will be integrated into the heart of your business processes."
-            },
-            "2": {
-                "title": "The 5 cybersecurity threats not to ignore",
-                "excerpt": "Security is not an option. Overview of major risks and strategies to effectively protect yourself against them.",
-                "content": "## Cybersecurity: The Risk Panorama in 2026\n\nWith the growing sophistication of attacks, the question is no longer \"if\" you will be attacked, but \"when\". Here are the 5 critical threats to watch.\n\n### 1. Phishing by Deepfake\nAttackers now use AI to clone the voice or image of your executives. Be vigilant about urgent transfer requests, even if they seem to come from the CEO.\n\n### 2. Supply Chain Attacks\nYour SME may be a gateway to a larger client. Hackers target weak links. Secure your supplier access.\n\n**Advice:** Adopt the \"Zero Trust\" principle. Trust no entity by default, even inside your network."
-            },
-            "3": {
-                "title": "The ROI of digital transformation: myth or reality?",
-                "excerpt": "Going beyond the buzzword. How to concretely measure the financial impact of your technical investments.",
-                "content": "## Measuring Digital Return on Investment\n\nInvesting in tech is expensive. Knowing how much it brings in is crucial.\n\n### 1. Reduction of Operational Costs\nAutomation reduces human errors and time spent on low-value tasks. Calculate the hourly rate saved x number of hours.\n\n### 2. Revenue Increase\nNew digital sales channels or better conversion thanks to UX can directly boost your revenue.\n\n**The trap to avoid:** Don't just look at immediate financial ROI. Take into account employee satisfaction and customer retention."
-            }
-        }
-    },
-    "services": {
-        "page": {
-            "title": "Our Services",
-            "subtitle": "Cutting-edge expertise for every stage of your growth.",
-            "detail": {
-                "keyFeatures": "Our key services:",
-                "targetAudienceTitle": "For whom?",
-                "targetAudienceText": "This service is aimed at SME leaders and business managers (Finance, HR, Sales) looking to digitize and optimize their operations, as well as CIOs of SMEs/Large Enterprises seeking external expertise for their audit, AI, or governance projects.",
-                "ctaTitle": "A project of {{service}}?",
-                "ctaDesc": "Let's discuss your specific needs. Get a custom quote.",
-                "ctaButton": "Get a quote"
-            }
-        },
-        "items": {
-            "audit-digital-cybersecurite": {
-                "title": "Digital Audit & Cybersecurity",
-                "tagline": "Diagnose to better protect and perform.",
-                "description": "A complete analysis of your digital environment to identify vulnerabilities, optimize performance, and ensure robust protection against current threats.",
-                "prestations": [
-                    "Flash IT/AI maturity audit",
-                    "Personalized risk and opportunity mapping",
-                    "Vulnerability scan and penetration testing",
-                    "Strategic security recommendations"
-                ]
-            },
-            "conseil-strategique-transformation": {
-                "title": "Strategic Consulting & Transformation",
-                "tagline": "Piloting change towards digital excellence.",
-                "description": "We help you define and implement a digital transformation roadmap aligned with your business objectives, integrating business process automation.",
-                "prestations": [
-                    "Digital transformation roadmap development",
-                    "Business process automation",
-                    "Data and AI governance",
-                    "Operational optimization via digital"
-                ]
-            },
-            "data-intelligence-ia-appliquee": {
-                "title": "Data Intelligence & Applied AI",
-                "tagline": "Transforming your data into competitive advantage.",
-                "description": "Harness the power of your data with custom Artificial Intelligence solutions to automate, predict, and decide smarter.",
-                "prestations": [
-                    "AI-narrated analytics dashboards",
-                    "Advanced chatbot deployment (support, FAQ, HR...)",
-                    "Document processing automation",
-                    "Prospect scoring and prediction solutions"
-                ]
-            },
-            "developpement-integration-digitale": {
-                "title": "Digital Development & Integration",
-                "tagline": "Building the tools for your performance.",
-                "description": "Creation of web and mobile applications and system integration to streamline your operations and offer exceptional user experiences.",
-                "prestations": [
-                    "Custom web and mobile app development",
-                    "API and third-party service integration",
-                    "Workflow automation (RPA)",
-                    "Legacy system modernization"
-                ]
-            },
-            "solutions-metier-fintech": {
-                "title": "Business Solutions & Fintech",
-                "tagline": "Proprietary tools for your specific needs.",
-                "description": "Design of proprietary business management solutions (CRM/ERP) and innovative financial products adapted to your sector of activity.",
-                "prestations": [
-                    "Proprietary CRM/ERP applications (Audit, Agro, SME)",
-                    "Fintech platform development",
-                    "Custom digital financial products",
-                    "Complex mandate management and billing systems"
-                ]
-            },
-            "accompagnement-formation": {
-                "title": "Support & Training",
-                "tagline": "Ensuring adoption and skill enhancement.",
-                "description": "We train your teams in new tools and methods to ensure successful adoption of the transformation and maximize return on investment.",
-                "prestations": [
-                    "Custom training on digital and AI tools",
-                    "Change management for teams",
-                    "Coaching managers on digital leadership",
-                    "Creation of documentation and educational materials"
-                ]
-            }
         }
     }
 }

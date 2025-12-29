@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
             </div>
           )}
           <div>
-            <h2 className="text-2xl font-bold text-[#0A1931] mb-4">{isOrderMode ? t('contact.form.submit') : t('contact.page.option2')}</h2>
+            {!isOrderMode && <h2 className="text-2xl font-bold text-[#0A1931] mb-4">{t('contact.page.option2')}</h2>}
             <ContactForm />
           </div>
         </div>
